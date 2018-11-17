@@ -1,6 +1,6 @@
 package english.controller;
 
-import english.CategoryConst;
+import english.TopicConst;
 import english.entity.UserEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class LearningController {
-    @RequestMapping(value = "learning")
-    public String showLearningPageById(Model model,
-                              HttpServletRequest request,
-                              @RequestParam(name = "categoryId") int categoryId) {
+public class TopicController {
+    @RequestMapping(value = "topic")
+    public String showTopicById(Model model,
+                                HttpServletRequest request,
+                                @RequestParam(name = "topicId") int topicId) {
         HttpSession session = request.getSession();
         UserEntity userEntity = (UserEntity) session.getAttribute("user");
         String data = "login";
@@ -24,18 +24,24 @@ public class LearningController {
             return data;
         }
 
-        switch (categoryId) {
-            case CategoryConst.CATEGORY_ABC:
-                data = "abc";
+        switch (topicId) {
+            case TopicConst.TOPIC_FAMILY:
+                data = "family";
                 break;
-            case CategoryConst.CATEGORY_TOPIC:
-                data = "topic";
+            case TopicConst.TOPIC_COLOR:
+                data = "color";
                 break;
-            case CategoryConst.CATEGORY_GAME:
-                data = "game";
+            case TopicConst.TOPIC_NUMBER:
+                data = "number";
                 break;
-            case CategoryConst.CATEGORY_SONG:
-                data = "song";
+            case TopicConst.TOPIC_ANIMAL:
+                data = "animal";
+                break;
+            case TopicConst.TOPIC_FURNITURE:
+                data = "furniture";
+                break;
+            case TopicConst.TOPIC_BODY:
+                data = "body";
                 break;
             default:
                 break;

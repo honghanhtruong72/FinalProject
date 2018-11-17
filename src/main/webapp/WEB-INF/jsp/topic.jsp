@@ -1,7 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Main</title>
+    <title>Topic</title>
     <link rel="stylesheet" href="reset.css"/>
     <style type="text/css">
         /* START RESET */
@@ -85,40 +88,40 @@
 </div>
 <!--END HEADER-->
 <div class="containerfamily">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=1">
         <img src="/resources/images/family1.png" align="center">
     </a>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">FAMILY</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=1">FAMILY</a></p>
 </div>
 <div class="containercolor">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=2">
         <img src="/resources/images/color.png">
     </a><br>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">COLOR</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=2">COLOR</a></p>
 </div>
 <div class="containernumber">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=3">
         <img src="/resources/images/number_1.png">
     </a><br>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">NUMBER</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=3">NUMBER</a></p>
 </div>
 <div class="containerbody">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=6">
         <img src="/resources/images/body_1.png">
     </a><br>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">BODY</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=6">BODY</a></p>
 </div>
 <div class="containeranimal">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=4">
         <img src="/resources/images/animal_1.png">
     </a><br>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">ANIMAL</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=4">ANIMAL</a></p>
 </div>
 </div>
 <div class="containerfurniture">
-    <a href="https://www.google.com.vn/">
+    <a style="text-decoration: none; color:#00000000;" href="topic?topicId=5">
         <img src="/resources/images/furniture_1.png">
     </a><br>
-    <p style="font-size:30px";><a href="https://www.google.com.vn/">FURNITURE</a></p>
+    <p style="font-size:30px";><a href="topic?topicId=5">FURNITURE</a></p>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Main</title>
+    <title>ABC</title>
     <link rel="stylesheet" href="reset.css"/>
     <style type="text/css">
         /* START RESET */

@@ -120,12 +120,6 @@
                       -ms-transform: translate(-50%, -50%);
                       text-align: center;
                 }*/
-
-
-        .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
     </style>
 </head>
 
@@ -149,25 +143,25 @@
 <!--END HEADER-->
 <!--BEGIN MAIN -->
 <div class="containerbackground">
-    <img src="/resources/images/background.png" >
+    <img src="/resources/images/background.png">
 </div>
 <div class="containerabc">
-    <a href="learning?categoryId=1">
+    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=1">
         <img src="/resources/images/abc.png">
     </a>
 </div>
 <div class="containertopic">
-    <a href="learning?categoryId=2">
+    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=2">
         <img src="/resources/images/topic.png" >
     </a>
 </div>
 <div class="containergame">
-    <a href="learning?categoryId=3">
+    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=3">
         <img src="/resources/images/game.png">
     </a>
 </div>
 <div class="containersong">
-    <a href="learning?categoryId=4">
+    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=4">
         <img src="/resources/images/song.png" >
     </a>
 </div >
