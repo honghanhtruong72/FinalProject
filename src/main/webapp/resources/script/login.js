@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 function userLogin() {
     $.ajax({
         type: "POST",
-        url: "login?email=" + $("#email").val() + "&password=" + $("#password").val(),
+        url: "login?userName=" + $("#userName").val() + "&password=" + $("#password").val(),
         timeout: 100000,
         success: function (data) {
             if (data == 1) {
@@ -18,11 +18,11 @@ function userLogin() {
             else if (data == 2) {
                 alert("Your password is incorrect.Try again!")
             }
-            else if (data == 4) {
-                alert("Your account is disabled by admin! Please contact to admin for question!")
+            else if (data == "user") {
+                alert("Ban la User")
             }
-            else {
-                display(data);
+            else if (data == "admin"){
+                alert("Ban la Admin")
             }
         }
     });

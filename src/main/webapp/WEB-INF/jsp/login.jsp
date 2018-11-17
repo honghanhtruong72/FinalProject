@@ -1,7 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V12</title>
+    <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -31,7 +34,8 @@
 <div class="limiter">
     <div class="container-login100" style="background-image: url('../../resources/Vendor/login/images/background.jpg');">
         <div class="wrap-login100 p-t-190 p-b-30">
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form"
+                method="post" id="login-nav">
 
 
 					<span class="login100-form-title p-t-20 p-b-45">
@@ -39,7 +43,7 @@
 					</span>
 
                 <div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-                    <input class="input100" type="text" name="username" placeholder="Username">
+                    <input class="input100" type="text" name="userName" placeholder="Username" id="userName">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-user"></i>
@@ -47,7 +51,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <input class="input100" type="password" name="password" placeholder="Password" id="password">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-lock"></i>
@@ -55,7 +59,7 @@
                 </div>
 
                 <div class="container-login100-form-btn p-t-10">
-                    <button class="login100-form-btn">
+                    <button class="login100-form-btn" >
                         Login
                     </button>
                 </div>
@@ -81,14 +85,16 @@
 
 
 <!--===============================================================================================-->
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-<script src="vendor/bootstrap/js/popper.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/resources/Vendor/login/vendor/bootstrap/js/popper.js"></script>
+<script src="/resources/Vendor/login/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-<script src="vendor/select2/select2.min.js"></script>
+<script src="/resources/Vendor/login/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-<script src="js/main.js"></script>
+<script src="/resources/Vendor/login/js/main.js"></script>
+<!--===============================================================================================-->
+<script src="/resources/script/login.js"></script>
 
 </body>
 </html>
