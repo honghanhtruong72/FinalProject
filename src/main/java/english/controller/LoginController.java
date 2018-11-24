@@ -36,21 +36,44 @@ public class LoginController {
         UserEntity user = userRepository.findByUserName(userName);
         //check user name
         if (user == null) {
-            return "1";
+            return "WrongUsername";
         }
         //check password
-        if (!user.getPassword().equals(password)) {
-            return "2";
+        else if (!user.getPassword().equals(password)) {
+            return "WrongPassword";
         }
+        String data = "";
         //check role admin or user
         if(user.getRoleEntity().getId() == roleRepository.findOne(1).getId()) {
             session.setAttribute("user", user);
-            return "admin";
+            model.addAttribute("user", user);
+            data = userName + "|" + user.getRoleEntity().getRoleName();
+            return data;
         }
         else {
             session.setAttribute("user", user);
-            return "user";
+            model.addAttribute("user", user);
+            data = userName + "|" + user.getRoleEntity().getRoleName();
+            return data;
         }
+    }
+
+    @RequestMapping(value = "/checkSession",method = RequestMethod.POST)
+    @ResponseBody
+    public String checkSession(HttpServletRequest request, Model model){
+        HttpSession session= request.getSession();
+        UserEntity user= (UserEntity) session.getAttribute("user");
+        if(user != null){
+            return "SessionExisted" +"|"+ user.getUserName();
+        }
+        else return "SessionNull";
+    }
+
+    @RequestMapping(value = "/logout")
+    public String logOut(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        session.removeAttribute("user");
+        return "home";
     }
 
 }

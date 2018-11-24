@@ -63,10 +63,6 @@
 </head>
 <body>
 <!--BEGIN HEADER-->
-<div class="logoback">
-
-    <img src="D:/project/DoAn/content/Backicon.png" width="70" height="70" />
-</div>
 <div class="header">
     <ul class="navr">
         <li><a href="">Hong Hanh</a></li>
@@ -111,4 +107,7 @@
 
 <!--END HEADER-->
 
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </body>
+</html>

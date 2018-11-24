@@ -121,13 +121,16 @@
                       text-align: center;
                 }*/
     </style>
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--%>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
+    <%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
 </head>
 
 <body>
 <!--BEGIN HEADER-->
 <div class="ribbon-container">
     <h1 class="ribbon">
-        <a>Well come to Hong Hanh!!</a>
+        <a id="wellCome"></a>
     </h1>
 </div>
 <div class="logo">
@@ -147,22 +150,22 @@
 </div>
 <div class="containerabc">
     <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=1">
-        <img src="/resources/images/abc.png">
+        <img title="Alphabet"src="/resources/images/abc.png" style="border-radius: 36.5%">
     </a>
 </div>
 <div class="containertopic">
     <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=2">
-        <img src="/resources/images/topic.png" >
+        <img title="Topic" src="/resources/images/topic.png" style="border-radius: 36.5%" >
     </a>
 </div>
 <div class="containergame">
     <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=3">
-        <img src="/resources/images/game.png">
+        <img title="Game" src="/resources/images/game.png" style="border-radius: 36.5%">
     </a>
 </div>
 <div class="containersong">
     <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=4">
-        <img src="/resources/images/song.png" >
+        <img title="Song" src="/resources/images/song.png" style="border-radius: 36.5%" >
     </a>
 </div >
 <div class="containerbee2">
@@ -178,30 +181,8 @@
 
     </ul>
 </div>
-
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </body>
-
-
-
-<!-- <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script> -->
-<!-- <div id="content">
-	<img src="D:\Download\1.jpg" alt="main screen" height="700px" width="1349px">
-	<img src="D:\Download\abc.PNG">
-</div> -->
-<!-- <div id="footer"></div> -->
 </html>
+

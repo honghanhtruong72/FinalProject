@@ -363,4 +363,8 @@
         }
     }
 </script>
+
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </body>
+</html>

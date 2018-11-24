@@ -12,18 +12,22 @@ function userLogin() {
         url: "login?userName=" + $("#userName").val() + "&password=" + $("#password").val(),
         timeout: 100000,
         success: function (data) {
-            if (data == 1) {
+            if (data == "WrongUsername") {
+                debugger;
                 alert("Your email is incorrect. Try again!")
             }
-            else if (data == 2) {
+            else if (data == "WrongPassword") {
                 alert("Your password is incorrect.Try again!")
             }
-            else if (data == "user") {
-                alert("Ban la User")
-            }
-            else if (data == "admin"){
-                alert("Ban la Admin")
+            else {
+                location.href = "http://localhost:8080/home";
+                var list = data.split("|");
+                display(list);
             }
         }
     });
+
+
 }
+
+

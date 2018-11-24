@@ -124,4 +124,7 @@
     </a><br>
     <p style="font-size:30px";><a href="topic?topicId=5">FURNITURE</a></p>
 </div>
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </body>
+</html>

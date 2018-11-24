@@ -116,23 +116,28 @@
     <img src="/resources/images/color/blacktx.png">
 </div>
 <div class="yellow myImgHover myImgSet">
-    <img src="/resources/images/content/color/yellowtx.png">
+    <img src="/resources/images/color/yellowtx.png">
 </div>
 <div class="red myImgHover myImgSet">
-    <img src="/resources/images/content/color/redtx.png">
+    <img src="/resources/images/color/redtx.png">
 </div>
 <div class="green myImgHover myImgSet">
-    <img src="/resources/images/content/color/greentx.png">
+    <img src="/resources/images/color/greentx.png">
 </div>
 <div class="white myImgHover myImgSet">
-    <img src="/resources/images/content/color/whitetx.png">
+    <img src="/resources/images/color/whitetx.png">
 </div>
 <div class="pink myImgHover myImgSet">
-    <img src="/resources/images/content/color/pinktx.png">
+    <img src="/resources/images/color/pinktx.png">
 </div>
 <div class="purple myImgHover myImgSet">
-    <img src="/resources/images/content/color/purpletx.png">
+    <img src="/resources/images/color/purpletx.png">
 </div>
 <div class="orange myImgHover myImgSet">
-    <img src="/resources/images/content/color/orangetx.png">
+    <img src="/resources/images/color/orangetx.png">
 </div>
+
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
+</body>
+</html>

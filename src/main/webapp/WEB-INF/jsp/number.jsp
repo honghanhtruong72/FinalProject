@@ -120,36 +120,40 @@
 <!--END HEADER-->
 <img src="/resources/images/number/backgroundnumber.png">
 <div class="zero myImgHover myImgSet">
-    <img src="/resources/images/content/number/zero.png">
+    <img src="/resources/images/number/zero.png">
 </div>
 <div class="one myImgHover myImgSet">
-    <img src="/resources/images/content/number/one.png">
+    <img src="/resources/images/number/one.png">
 </div>
 <div class="two myImgHover myImgSet">
-    <img src="/resources/images/content/number/two.png">
+    <img src="/resources/images/number/two.png">
 </div>
 <div class="three myImgHover myImgSet">
-    <img src="/resources/images/content/number/three.png">
+    <img src="/resources/images/number/three.png">
 </div>
 <div class="four myImgHover myImgSet">
-    <img src="/resources/images/content/number/four.png">
+    <img src="/resources/images/number/four.png">
 </div>
 <div class="five myImgHover myImgSet">
-    <img src="/resources/images/content/number/five.png">
+    <img src="/resources/images/number/five.png">
 </div>
 <div class="six myImgHover myImgSet">
-    <img src="/resources/images/content/number/six.png">
+    <img src="/resources/images/number/six.png">
 </div>
 <div class="seven myImgHover myImgSet">
-    <img src="/resources/images/content/number/seven.png">
+    <img src="/resources/images/number/seven.png">
 </div>
 <div class="eight myImgHover myImgSet">
-    <img src="/resources/images/content/number/eight.png">
+    <img src="/resources/images/number/eight.png">
 </div>
 <div class="nine myImgHover myImgSet">
-    <img src="D/resources/images/content/number/nine.png">
+    <img src="/resources/images/number/nine.png">
 </div>
 <div class="ten myImgHover myImgSet">
-    <img src="/resources/images/content/number/ten.png">
+    <img src="/resources/images/number/ten.png">
 </div>
+
+<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </body>
+</html>
