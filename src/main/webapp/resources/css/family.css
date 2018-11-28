@@ -1,0 +1,70 @@
+.myImgSet {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.gf{
+    position: absolute;
+    top: 232px;
+    left: 706px;
+    transform: translate(-50%, -50%);
+}
+.gm{
+    position: absolute;
+    top: 232px;
+    left: 912px;
+    transform: translate(-50%, -50%);
+}
+.mother{
+    position: absolute;
+    top: 424px;
+    left: 607px;
+    transform: translate(-50%, -50%);
+}
+.father{
+    position: absolute;
+    top: 424px;
+    left: 418px;
+    transform: translate(-50%, -50%);
+}
+.uncle1{
+    position: absolute;
+    top: 424px;
+    left: 811px;
+    transform: translate(-50%, -50%);
+}
+.uncle2{
+    position: absolute;
+    top: 424px;
+    left: 1015px;
+    transform: translate(-50%, -50%);
+}
+.aunt{
+    position: absolute;
+    top: 424px;
+    left: 1204px;
+    transform: translate(-50%, -50%);
+}
+.me{
+    position: absolute;
+    top: 604px;
+    left: 512px;
+    transform: translate(-50%, -50%);
+}
+.brother{
+    position: absolute;
+    top: 604px;
+    left: 345px;
+    transform: translate(-50%, -50%);
+}
+.sister{
+    position: absolute;
+    top: 604px;
+    left: 680px;
+    transform: translate(-50%, -50%);
+}
+.cousin{
+    position: absolute;
+    top: 604px;
+    left: 1110px;
+    transform: translate(-50%, -50%);
+}

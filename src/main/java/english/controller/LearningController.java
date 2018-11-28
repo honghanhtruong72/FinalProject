@@ -20,9 +20,9 @@ public class LearningController {
         UserEntity userEntity = (UserEntity) session.getAttribute("user");
         String data = "login";
         // check dang nhap
-        if (userEntity == null) {
-            return data;
-        }
+//        if (userEntity == null) {
+//            return data;
+//        }
 
         switch (categoryId) {
             case CategoryConst.CATEGORY_ABC:

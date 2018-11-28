@@ -1,0 +1,240 @@
+
+body{
+
+    background-image: url(/resources/images/backgroundABC.png);
+    background-repeat: no-repeat;
+}
+.myImgSet {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.myImgHover:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.A{
+    position: absolute;
+    top: 173px;
+    left: 415px;
+    transform: translate(-50%, -50%);
+}
+.B{
+    position: absolute;
+    top: 173px;
+    left: 514px;
+    transform: translate(-50%, -50%);
+}
+.C{
+    position: absolute;
+    top: 173px;
+    left: 614px;
+    transform: translate(-50%, -50%);
+}
+.D{
+    position: absolute;
+    top: 173px;
+    left: 714px;
+    transform: translate(-50%, -50%);
+}
+.E{
+    position: absolute;
+    top: 173px;
+    left: 813px;
+    transform: translate(-50%, -50%);
+}
+.F{
+    position: absolute;
+    top: 173px;
+    left: 913px;
+    transform: translate(-50%, -50%);
+}
+.G{
+    position: absolute;
+    top: 267px;
+    left: 316px;
+    transform: translate(-50%, -50%);
+}
+.H{
+    position: absolute;
+    top: 267px;
+    left: 415px;
+    transform: translate(-50%, -50%);
+}
+.I{
+    position: absolute;
+    top: 267px;
+    left: 514px;
+    transform: translate(-50%, -50%);
+}
+.J{
+    position: absolute;
+    top: 267px;
+    left: 614px;
+    transform: translate(-50%, -50%);
+}
+.K{
+    position: absolute;
+    top: 267px;
+    left: 714px;
+    transform: translate(-50%, -50%);
+}
+.L{
+    position: absolute;
+    top: 267px;
+    left: 813px;
+    transform: translate(-50%, -50%);
+}
+.M{
+    position: absolute;
+    top: 267px;
+    left:913px;
+    transform: translate(-50%, -50%);
+}
+.N{
+    position: absolute;
+    top: 267px;
+    left: 1013px;
+    transform: translate(-50%, -50%);
+}
+.O{
+    position: absolute;
+    top: 364px;
+    left: 316px;
+    transform: translate(-50%, -50%);
+}
+.P{
+    position: absolute;
+    top: 364px;
+    left: 415px;
+    transform: translate(-50%, -50%);
+}
+.Q{
+    position: absolute;
+    top: 364px;
+    left: 514px;
+    transform: translate(-50%, -50%);
+}
+.R{
+    position: absolute;
+    top: 364px;
+    left: 614px;
+    transform: translate(-50%, -50%);
+}
+.S{
+    position: absolute;
+    top: 364px;
+    left: 714px;
+    transform: translate(-50%, -50%);
+}
+.T{
+    position: absolute;
+    top: 364px;
+    left: 813px;
+    transform: translate(-50%, -50%);
+}
+.U{
+    position: absolute;
+    top: 364px;
+    left: 913px;
+    transform: translate(-50%, -50%);
+}
+.V{
+    position: absolute;
+    top: 364px;
+    left: 1014px;
+    transform: translate(-50%, -50%);
+}
+.W{
+    position: absolute;
+    top: 458px;
+    left: 514px;
+    transform: translate(-50%, -50%);
+}
+.X{
+    position: absolute;
+    top: 458px;
+    left: 614px;
+    transform: translate(-50%, -50%);
+}
+.Y{
+    position: absolute;
+    top: 458px;
+    left: 714px;
+    transform: translate(-50%, -50%);
+}
+.Z{
+    position: absolute;
+    top: 458px;
+    left: 813px;
+    transform: translate(-50%, -50%);
+}

@@ -1,126 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Animal</title>
+    <title>English Animal</title>
     <link rel="stylesheet" href="reset.css"/>
-    <style type="text/css">
-        /* START RESET */
-        html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
-            margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;text-decoration:none;list-style-type:none;}
-        /* END RESET */
-        body{
-            background: #9999ff ;
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            min-width:1070px;
-            margin: 0;
+    <link rel="stylesheet" href="/resources/css/normalize.css"/>
+    <link rel="stylesheet" href="/resources/css/style.css"/>
+    <link rel="stylesheet" href="/resources/css/animal.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/resources/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
 
-        }
-        .header {
-            background:#97DBFF url(/resources/images/BG-cloudsbanner.png) repeat-x; height:36px; border:none; border-collapse:collapse; padding:10px 0 0 265px; margin-bottom:25px; color: #005bc5; position:relative; z-index:2;
-        }
-        .logoback{
-            text-align:center; position:absolute;display:block; z-index:4;
-            behavior: url(/resources/css/PIE.htc); /* well-tested solution for adding border-radius to IE 6-9 */
-        }
-        .logoback img {position:relative; top:2px; left:2px}
-        /*.angle{
-                position:absolute;
-                top:0;
-                z-index:3;
-             }*/
-        .nav li {float:left;}
-        .navr {margin-right:15px;}
-        .navr li {float:right; white-space:nowrap;}
-        .nav a, .footernav a, .navr a {color:#005bc5;}
-        a {
-            text-decoration: none;
-        }
-        .myImgSet {
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .myImgHover:hover {opacity: 0.7;}
-        .cat{
-            position: absolute;
-            top: 340px;
-            left:165px;
-            transform: translate(-50%, -50%);
-        }
-        .pig{
-            position: absolute;
-            top: 340px;
-            left:520px;
-            transform: translate(-50%, -50%);
-        }
-        .dog{
-            position: absolute;
-            top: 340px;
-            left:850px;
-            transform: translate(-50%, -50%);
-        }
-        .frog{
-            position: absolute;
-            top: 630px;
-            left:165px;
-            transform: translate(-50%, -50%);
-        }
-        .horse{
-            position: absolute;
-            top: 340px;
-            left:1170px;
-            transform: translate(-50%, -50%);
-        }
-        .monkey{
-            position: absolute;
-            top: 950px;
-            left:165px;
-            transform: translate(-50%, -50%);
-        }
-        .dolphin{
-            position: absolute;
-            top: 630px;
-            left:520px;
-            transform: translate(-50%, -50%);
-        }
-        .duck{
-            position: absolute;
-            top: 630px;
-            left:850px;
-            transform: translate(-50%, -50%);
-        }
-        .zebra{
-            position: absolute;
-            top: 630px;
-            left:1170px;
-            transform: translate(-50%, -50%);
-        }
-        .shark{
-            position: absolute;
-            top: 950px;
-            left:520px;
-            transform: translate(-50%, -50%);
-        }
-        .tiger{
-            position: absolute;
-            top: 950px;
-            left:850px;
-            transform: translate(-50%, -50%);
-        }
-        .octopus{
-            position: absolute;
-            top: 950px;
-            left:1170px;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <!-- jQuery library -->
+    <script src="/resources/script/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="/resources/script/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="/resources/script/bootstrap.min.js"></script>
 </head>
 <body>
 <!--BEGIN HEADER-->
+<div class="ribbon-container">
+    <h1 class="ribbon">
+
+        <div class="main-menu">
+
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a href="home" class="nav-link">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="learning?categoryId=1" class="nav-link">ABC</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">TOPIC</a>
+                    <div class="dropdown-menu">
+                        <a href="topic?topicId=1" class="dropdown-item">Family</a>
+                        <a href="topic?topicId=2" class="dropdown-item">Color</a>
+                        <a href="topic?topicId=3" class="dropdown-item">Number</a>
+                        <a href="topic?topicId=4" class="dropdown-item">Animal</a>
+                        <a href="topic?topicId=5" class="dropdown-item">Furniture</a>
+                        <a href="topic?topicId=6" class="dropdown-item">Body</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="learning?categoryId=3" class="nav-link">GAME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="learning?categoryId=4" class="nav-link">SONG</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </h1>
+</div>
+
+<div class="logo">
+    <img href="home" src="/resources/images/logo.jpg" width="220" height="60" alt="Starfall"/>
+</div>
+
 <div class="header">
     <ul class="navr">
-        <li><a href="">Hong Hanh</a></li>
-        <li> &nbsp; &bull; &nbsp; </li>
-        <li><a href="">Review</a></li>
+        <li><a href="login">Sign In</a></li>
+        <li><a href="login">How to Join</a></li>
     </ul>
 </div>
 <!--END HEADER-->
@@ -161,7 +112,43 @@
 <div class="octopus myImgHover myImgSet">
     <img src="/resources/images/animal/octopustx.png">
 </div>
+<!--BEGIN FOOTER -->
+<div class="footer row">
+    <div class="main-footer">
+        <div class="news-letter">
+            <form class="form-inline" action="#">
+                <label for="email">NEWSLETTER</label>
+                <input type="email" class="form-control" name="" id="email" placeholder="email@gmail.com">
+                <button type="submit" class="btn"><i class="far fa-envelope"></i> Subscribe Me</button>
+            </form>
+        </div>
+        <div class="contact">
 
+            <ul class="contact-title nav">
+                <li class="nav-item contact-title-li">
+                    <a href="#" class="nav-link">ABOUT US</a>
+                    <p class="underline"></p>
+                    <span class="nav-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit tempor luctus.</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i
+                            class="fab fa-twitter"></i> <i class="fab fa-skype"></i></a>
+                </li>
+                <li class="nav-item contact-title-li">
+                    <a href="#" class="nav-link">GLOSSY LOCATION</a>
+                    <p class="underline"></p>
+                    <span class="nav-link"><i class="fas fa-map-marker-alt"></i>54 Nguyen Luong Bang, Da Nang</span>
+                    <span class="nav-link"><i class="fas fa-mobile-alt"></i>+84 000 0000</span>
+                    <span class="nav-link"><i class="far fa-envelope"></i>email@gmail.com</span>
+                </li>
+            </ul>
+
+        </div>
+        <p class="underline-copyright"></p>
+        <div class="copyright">
+            <p>Copyright @ 2018 Truong Hong Hanh. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- END FOOTER -->
 
 <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="/resources/script/CheckSession.js"></script>

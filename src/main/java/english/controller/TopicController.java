@@ -20,9 +20,6 @@ public class TopicController {
         UserEntity userEntity = (UserEntity) session.getAttribute("user");
         String data = "login";
         // check dang nhap
-        if (userEntity == null) {
-            return data;
-        }
 
         switch (topicId) {
             case TopicConst.TOPIC_FAMILY:

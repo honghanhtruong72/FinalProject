@@ -1,0 +1,37 @@
+body{
+    background: #1ac6ff ;
+}
+.myImgSet {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.myImgHover:hover {opacity: 0.7;}
+.img{
+    position: absolute;
+    top: 340px;
+    left:670px;
+    transform: translate(-50%, -50%);
+}
+.br{position: absolute;
+    top: 379px;
+    left:537px;
+    transform: translate(-50%, -50%);
+}
+.bthr{
+    position: absolute;
+    top: 379px;
+    left:805px;
+    transform: translate(-50%, -50%);
+}
+.lr{
+    position: absolute;
+    top: 535px;
+    left:537px;
+    transform: translate(-50%, -50%);
+}
+.kt{
+    position: absolute;
+    top: 535px;
+    left:805px;
+    transform: translate(-50%, -50%);
+}

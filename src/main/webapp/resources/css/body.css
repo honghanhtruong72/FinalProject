@@ -1,0 +1,108 @@
+.imgbackground{
+    position: absolute;
+    top: 380px;
+    left:670px;
+    transform: translate(-50%, -50%);
+}
+.hair{
+    position: absolute;
+    top: 96px;
+    left:1204px;
+    transform: translate(-50%, -50%);
+}
+.ear{
+    position: absolute;
+    top: 213px;
+    left:1220px;
+    transform: translate(-50%, -50%);
+}
+.tooth{
+    position: absolute;
+    top: 274px;
+    left:1212px;
+    transform: translate(-50%, -50%);
+}
+.neck{
+    position: absolute;
+    top: 319px;
+    left:1290px;
+    transform: translate(-50%, -50%);
+}
+.arm{
+    position: absolute;
+    top: 364px;
+    left:1225px;
+    transform: translate(-50%, -50%);
+}
+.finger{
+    position: absolute;
+    top: 450px;
+    left:1237px;
+    transform: translate(-50%, -50%);
+}
+.knee{
+    position: absolute;
+    top: 512px;
+    left:1223px;
+    transform: translate(-50%, -50%);
+}
+.toe{
+    position: absolute;
+    top: 608px;
+    left:1216px;
+    transform: translate(-50%, -50%);
+}
+.eye{
+    position: absolute;
+    top: 159px;
+    left:800px;
+    transform: translate(-50%, -50%);
+}
+.nose{
+    position: absolute;
+    top: 229px;
+    left:796px;
+    transform: translate(-50%, -50%);
+}
+.mouth{
+    position: absolute;
+    top: 274px;
+    left:796px;
+    transform: translate(-50%, -50%);
+}
+.shoulder{
+    position: absolute;
+    top: 326px;
+    left:730px;
+    transform: translate(-50%, -50%);
+}
+.chest{
+    position: absolute;
+    top: 362px;
+    left:805px;
+    transform: translate(-50%, -50%);
+}
+.hand{
+    position: absolute;
+    top: 418px;
+    left:764px;
+    transform: translate(-50%, -50%);
+}
+.stomach{
+    position: absolute;
+    top: 496px;
+    left:793px;
+    transform: translate(-50%, -50%);
+}
+.leg{
+    position: absolute;
+    top: 538px;
+    left:793px;
+    transform: translate(-50%, -50%);
+}
+.foot{
+    position: absolute;
+    top: 588px;
+    left:776px;
+    transform: translate(-50%, -50%);
+}
