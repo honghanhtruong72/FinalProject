@@ -22,6 +22,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="/resources/script/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -131,12 +133,11 @@
                 <li class="nav-item contact-title-li">
                     <a href="#" class="nav-link">GLOSSY LOCATION</a>
                     <p class="underline"></p>
-                    <span class="nav-link"><i class="fas fa-map-marker-alt"></i>54 Nguyen Luong Bang, Da Nang</span>
-                    <span class="nav-link"><i class="fas fa-mobile-alt"></i>+84 000 0000</span>
+                    <span class="nav-link"><i class="fa fa-home fa-fw"></i>54 Nguyen Luong Bang, Da Nang</span>
+                    <span class="nav-link"><i class="fa fa-facebook"></i>+84 000 0000</span>
                     <span class="nav-link"><i class="far fa-envelope"></i>email@gmail.com</span>
                 </li>
             </ul>
-
         </div>
         <p class="underline-copyright"></p>
         <div class="copyright">
