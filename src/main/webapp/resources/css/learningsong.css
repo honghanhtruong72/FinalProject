@@ -1,0 +1,27 @@
+body{
+    background-color: #ffb3ff;
+    background-image: url("/resources/images/backSong.png");
+    background-repeat: no-repeat;
+}
+.video{
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+}
+.frame{
+    border: 5px solid #00b386;
+    padding: 15px;
+    border-radius: 15px 50px;
+    position: absolute;
+    top: 540px;
+    left: 72.33%;
+    transform: translate(-50%, -50%);
+    width: 570px;
+    background-color: #00e6ac;
+}
+.alignCenter{
+    text-align: center;
+
+}

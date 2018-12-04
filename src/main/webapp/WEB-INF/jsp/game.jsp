@@ -86,8 +86,8 @@
     </ul>
 </div>
 <!--END HEADER-->
-<div class="wrap">
-    <div class="game"></div>
+<div class="wrap container">
+    <div class="game row"></div>
 
     <div class="modal-overlay">
         <div class="modal">

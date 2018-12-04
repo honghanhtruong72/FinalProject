@@ -1,0 +1,63 @@
+* {
+	font-family: 'Open sans', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.wrapper {
+	background-color: #ff99ff;
+	z-index: -1;
+}
+.header,
+.main,
+.footer {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.header-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1440px;
+	height: auto;
+	z-index: 0;
+}
+.header-top,
+.header-menu,
+.header-title {
+	position: relative;
+	z-index: 1;
+}
+.header {
+	position: relative;
+	height: 670.66px;
+}
+.main-about {
+	background-color: #32cfbc;
+	width: 1440px;
+}
+.main-party {
+	width: 1440px;
+	background-color: #f8d311;
+}
+.main-gallery {
+	width: 1440px;
+	background-color: #255ea8;
+}
+.main-team {
+	width: 1440px;
+	background-color: #fe5f97;
+}
+.main-event {
+	width: 1440px;
+	background-color: #f8d311;
+}
+.footer-email {
+	width: 1440px;
+	background-color: #434f53;
+}
+.footer-contact,
+.footer-copyright {
+	width: 1440px;
+	background-color: #15427e;
+}

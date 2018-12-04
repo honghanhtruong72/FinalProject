@@ -20,6 +20,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="/resources/script/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #1ac6ff;
+        }
+    </style>
 </head>
 <body>
 <!--BEGIN HEADER-->
@@ -112,6 +117,38 @@
 <div class="octopus myImgHover myImgSet">
     <img src="/resources/images/animal/octopustx.png">
 </div>
+
+<%--<div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">--%>
+
+    <%--<!-- Indicators -->--%>
+    <%--<ul class="carousel-indicators">--%>
+        <%--<li data-target="#demo" data-slide-to="0" class="active"></li>--%>
+        <%--<li data-target="#demo" data-slide-to="1"></li>--%>
+        <%--<li data-target="#demo" data-slide-to="2"></li>--%>
+    <%--</ul>--%>
+
+    <%--<!-- The slideshow -->--%>
+    <%--<div class="carousel-inner">--%>
+        <%--<div class="carousel-item active">--%>
+            <%--<img src="/resources/images/animal/cat.png" alt="cat" width="600" height="300">--%>
+        <%--</div>--%>
+        <%--<div class="carousel-item">--%>
+            <%--<img src="/resources/images/animal/frog.png" alt="frog" width="600" height="300">--%>
+        <%--</div>--%>
+        <%--<div class="carousel-item">--%>
+            <%--<img src="/resources/images/animal/monkey.png" alt="monkey" width="600" height="300">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+
+    <%--<!-- Left and right controls -->--%>
+    <%--<a class="carousel-control-prev" href="#demo" data-slide="prev">--%>
+        <%--<span class="carousel-control-prev-icon"></span>--%>
+    <%--</a>--%>
+    <%--<a class="carousel-control-next" href="#demo" data-slide="next">--%>
+        <%--<span class="carousel-control-next-icon"></span>--%>
+    <%--</a>--%>
+<%--</div>--%>
+
 <!--BEGIN FOOTER -->
 <div class="footer row">
     <div class="main-footer">

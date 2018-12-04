@@ -56,11 +56,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="learning?categoryId=3" class="nav-link">SONG</a>
+                    <a href="learning?categoryId=3" class="nav-link">GAME</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="learning?categoryId=4" class="nav-link">GAME</a>
+                    <a href="learning?categoryId=4" class="nav-link">SONG</a>
                 </li>
             </ul>
 
@@ -84,7 +84,7 @@
     <table class="table">
         <tr >
             <td>
-                <a href="https://www.google.com.vn/">BABY SHARK</a>
+                <a href="learningsong?songId=1">BABY SHARK</a>
             </td>
         </tr>
         <tr >

@@ -1,6 +1,7 @@
 package english.controller;
 
 import english.CategoryConst;
+import english.TopicConst;
 import english.entity.UserEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,5 +43,49 @@ public class LearningController {
         }
 
         return data;
+    }
+
+    @RequestMapping(value = "topic")
+    public String showTopicById(Model model,
+                                HttpServletRequest request,
+                                @RequestParam(name = "topicId") int topicId) {
+        HttpSession session = request.getSession();
+        UserEntity userEntity = (UserEntity) session.getAttribute("user");
+        String data = "login";
+        // check dang nhap
+
+        switch (topicId) {
+            case TopicConst.TOPIC_FAMILY:
+                data = "family";
+                break;
+            case TopicConst.TOPIC_COLOR:
+                data = "color";
+                break;
+            case TopicConst.TOPIC_NUMBER:
+                data = "number";
+                break;
+            case TopicConst.TOPIC_ANIMAL:
+                data = "example_animal";
+                break;
+            case TopicConst.TOPIC_FURNITURE:
+                data = "furniture";
+                break;
+            case TopicConst.TOPIC_BODY:
+                data = "body";
+                break;
+            default:
+                break;
+        }
+
+        return data;
+    }
+
+    @RequestMapping(value = "learningsong")
+    public String showSongById(Model model,
+                                HttpServletRequest request,
+                                @RequestParam(name = "songId") int topicId) {
+        HttpSession session = request.getSession();
+        UserEntity userEntity = (UserEntity) session.getAttribute("user");
+        return "learningsong";
     }
 }

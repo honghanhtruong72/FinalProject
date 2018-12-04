@@ -4,150 +4,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>English Home</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="/resources/css/normalize.css"/>
-    <link rel="stylesheet" href="/resources/css/style.css"/>
+    <title>INDEX</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/resources/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="/resources/script/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <!-- Popper JS -->
-    <script src="/resources/script/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="/resources/script/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/resources/template/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/resources/template/css/style.css">
 </head>
-
 <body>
-<!--BEGIN HEADER-->
-<div class="ribbon-container">
-    <h1 class="ribbon">
-
-        <div class="main-menu">
-
-            <ul class="nav">
-
-                <li class="nav-item">
-                    <a href="home" class="nav-link">HOME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="learning?categoryId=1" class="nav-link">ABC</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">TOPIC</a>
-                    <div class="dropdown-menu">
-                        <a href="topic?topicId=1" class="dropdown-item">Family</a>
-                        <a href="topic?topicId=2" class="dropdown-item">Color</a>
-                        <a href="topic?topicId=3" class="dropdown-item">Number</a>
-                        <a href="topic?topicId=4" class="dropdown-item">Animal</a>
-                        <a href="topic?topicId=5" class="dropdown-item">Furniture</a>
-                        <a href="topic?topicId=6" class="dropdown-item">Body</a>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <span><i class="fas fa-phone"></i> (123) 456-7890</span>
                     </div>
-                </li>
 
-                <li class="nav-item">
-                    <a href="learning?categoryId=3" class="nav-link">GAME</a>
-                </li>
+                    <div class="col-6 text-right">
+							<span>
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-skype"></i>
+								<i class="fab fa-youtube"></i>
+								<i class="fas fa-cloud"></i>
+							</span>
+                    </div>
+                </div>
 
-                <li class="nav-item">
-                    <a href="learning?categoryId=4" class="nav-link">SONG</a>
-                </li>
-            </ul>
+                <div class="row">
+                    <div class="col-7 text-right">
+                        <span class="mr-5 pr-2">LOGO</span>
+                    </div>
 
+                    <div class="col-5 text-right">
+                        <button>RESERVATION</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </h1>
-</div>
+        <div class="header-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav col-12 justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">HOME</a>
+                        </li>
 
-<div class="logo">
-    <img href="home" src="/resources/images/logo.jpg" width="220" height="60" alt="Starfall"/>
-</div>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">EVENTS</a>
+                        </li>
 
-<div class="header">
-    <ul class="navr">
-        <li><a href="login">Sign In</a></li>
-        <li><a href="login">How to Join</a></li>
-    </ul>
-</div>
-<!--END HEADER-->
-<!--BEGIN MAIN -->
-<div class="containerbackground">
-    <img src="/resources/images/background.png">
-</div>
-<div class="containerabc">
-    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=1">
-        <img title="Alphabet" src="/resources/images/abc.png" style="border-radius: 36.5%">
-    </a>
-</div>
-<div class="containertopic">
-    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=2">
-        <img title="Topic" src="/resources/images/topic.png" style="border-radius: 36.5%">
-    </a>
-</div>
-<div class="containergame">
-    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=3">
-        <img title="Game" src="/resources/images/game.png" style="border-radius: 36.5%">
-    </a>
-</div>
-<div class="containersong">
-    <a style="text-decoration: none; color:#00000000;" href="learning?categoryId=4">
-        <img title="Song" src="/resources/images/song.png" style="border-radius: 36.5%">
-    </a>
-</div>
-<div class="containerbee2">
-    <img src="/resources/images/bee2.png">
-</div>
-<div class="containerbee1">
-    <img src="/resources/images/bee1.png">
-</div>
-<!--END MAIN -->
-<!--BEGIN FOOTER -->
-<div class="footer row">
-    <div class="main-footer">
-        <div class="news-letter">
-            <form class="form-inline" action="#">
-                <label for="email">NEWSLETTER</label>
-                <input type="email" class="form-control" name="" id="email" placeholder="email@gmail.com">
-                <button type="submit" class="btn"><i class="far fa-envelope"></i> Subscribe Me</button>
-            </form>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">GALLERY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="contact">
-            <ul class="contact-title nav">
-                <li class="nav-item contact-title-li">
-                    <a href="#" class="nav-link">ABOUT US</a>
-                    <p class="underline"></p>
-                    <span class="nav-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit tempor luctus.</span>
-                    <a href="#"><i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i
-                            class="fab fa-twitter"></i> <i class="fab fa-skype"></i></a>
-                </li>
-                <li class="nav-item contact-title-li">
-                    <a href="#" class="nav-link">GLOSSY LOCATION</a>
-                    <p class="underline"></p>
-                    <span class="nav-link"><i class="fa fa-home fa-fw"></i>54 Nguyen Luong Bang, Da Nang</span>
-                    <span class="nav-link"><i class="fa fa-facebook"></i>+84 000 0000</span>
-                    <span class="nav-link"><i class="far fa-envelope"></i>email@gmail.com</span>
-                </li>
-            </ul>
+
+        <div class="header-title">
+            <div class="container">
+                <div class="row">
+                    <p class="col-12 text-center">Welcome</p>
+                </div>
+
+                <div class="row">
+                    <p class="col-12 text-center">MAGIC SPACE FOR CHILDREN</p>
+                </div>
+
+                <div class="row">
+                    <p class="col-12 text-center"><button>DISCOVER NOW</button></p>
+                </div>
+            </div>
         </div>
-        <p class="underline-copyright"></p>
-        <div class="copyright">
-            <p>Copyright @ 2018 Truong Hong Hanh. All Rights Reserved.</p>
+
+        <div class="header-background">
+            <img src="/resources/template/img/1.jpg" class="img-fluid">
         </div>
-    </div>
+    </header>
+
+    <main class="main">
+        <div class="main-about">
+            <div class="contaier">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <img src="img/about.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <p>About Us</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button>MORE INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-party">
+            <div class="container">
+                <div class="row">
+                    <p class="col-12 text-center">Kid Parties Services</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Party</button></p>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Fireworks</button></p>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Invitations</button></p>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Catering</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-gallery">
+            <div class="container">
+                <div class="row">
+                    <p class="col-12 text-center">Gallery</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/gallery-height.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-6">
+                        <div class="col-12">
+                            <img src="img/gallery-width.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="col-12">
+                            <img src="img/gallery-width.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/gallery-width.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-6">
+                        <img src="img/gallery-width.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-team">
+            <div class="contaier">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <img src="img/about.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <p>Meet the Team</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button>CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-event">
+            <div class="container">
+                <div class="row">
+                    <p class="col-12 text-center">Latest Event</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Coloring Party</button></p>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Indoor Parties</button></p>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <img src="img/party.jpg" class="img-fluid">
+                        <p class="col-12 text-center"><button class="text-center">Balloons and Bubbles</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Receive Event Updates</p>
+                    </div>
+
+                    <div class="col-6">
+                        <p class="col-12"><input type="text" name=""></p>
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p>LOGO</p>
+                        <span>
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-skype"></i>
+								<i class="fab fa-youtube"></i>
+								<i class="fas fa-cloud"></i>
+							</span>
+                    </div>
+
+                    <div class="col-3">
+                        <p>Pages</p>
+
+                        <p>Home</p>
+                        <p>Event</p>
+                        <p>About Us</p>
+                        <p>Gallery</p>
+                        <p>Blog</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p>Hours</p>
+
+                        <p>Home</p>
+                        <p>Event</p>
+                        <p>About Us</p>
+                        <p>Gallery</p>
+                        <p>Blog</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p>Contacts</p>
+
+                        <p>Street</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <p>Copyright 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
-<!-- END FOOTER -->
-<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="/resources/script/CheckSession.js"></script>
 </body>
 </html>
-
