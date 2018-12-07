@@ -68,7 +68,7 @@ public class LearningController {
                 data = "example_animal";
                 break;
             case TopicConst.TOPIC_FURNITURE:
-                data = "furniture";
+                data = "example_animal2";
                 break;
             case TopicConst.TOPIC_BODY:
                 data = "body";
