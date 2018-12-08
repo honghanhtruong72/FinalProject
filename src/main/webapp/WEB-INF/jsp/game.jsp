@@ -4,104 +4,223 @@
 <html>
 <head>
     <title>Game</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="/resources/css/normalize.css"/>
-    <link rel="stylesheet" href="/resources/css/style.css"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/resources/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="/resources/script/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <!-- Popper JS -->
-    <script src="/resources/script/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="/resources/script/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Anton'>
-    <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/template/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/resources/template/css/style.css">
     <link rel="stylesheet" href="/resources/css/game1.css"/>
-    <link rel="stylesheet/less" type="text/css" href="/resources/css/game1.scss" />
-    <script src="less.js" type="text/javascript"></script>
 </head>
 <body>
-</body>
-<!--BEGIN HEADER-->
-<div class="ribbon-container">
-    <h1 class="ribbon">
-
-        <div class="main-menu">
-
-            <ul class="nav">
-
-                <li class="nav-item">
-                    <a href="home" class="nav-link">HOME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="learning?categoryId=1" class="nav-link">ABC</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">TOPIC</a>
-                    <div class="dropdown-menu">
-                        <a href="topic?topicId=1" class="dropdown-item">Family</a>
-                        <a href="topic?topicId=2" class="dropdown-item">Color</a>
-                        <a href="topic?topicId=3" class="dropdown-item">Number</a>
-                        <a href="topic?topicId=4" class="dropdown-item">Animal</a>
-                        <a href="topic?topicId=5" class="dropdown-item">Furniture</a>
-                        <a href="topic?topicId=6" class="dropdown-item">Body</a>
+<div class="wrapper-sub">
+    <header class="header header-sub">
+        <div class="header-top header-top-sub">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="header-top-left col-6 text-left">
+                        <span><i class="fas fa-phone"></i> (123) 456-7890</span>
                     </div>
-                </li>
 
-                <li class="nav-item">
-                    <a href="learning?categoryId=3" class="nav-link">GAME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="learning?categoryId=4" class="nav-link">SONG</a>
-                </li>
-            </ul>
-
+                    <div class="header-top-right col-6 text-right">
+							<span>
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-skype"></i>
+								<i class="fab fa-youtube"></i>
+								<i class="fas fa-cloud"></i>
+							</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </h1>
-</div>
+        <div class="header-top">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-7 text-right">
+                        <span class="mr-5 pr-2">LOGO</span>
+                    </div>
 
-<div class="logo">
-    <img href="home" src="/resources/images/logo.jpg" width="220" height="60" alt="Starfall"/>
-</div>
-
-<div class="header">
-    <ul class="navr">
-        <li><a href="login">Sign In</a></li>
-        <li><a href="login">How to Join</a></li>
-    </ul>
-</div>
-<!--END HEADER-->
-<div class="wrap container">
-    <div class="game row"></div>
-
-    <div class="modal-overlay">
-        <div class="modal">
-            <h2 class="winner">Thắng Rồi</h2>
-            <button class="restart">Chơi Lại</button>
-            <p class="share-text">Chia sẻ chiến thắng</p>
-            <ul class="social">
-                <li><a target="_blank" class="fa fa-twitter-square" href="http://twitter.com/share?url=http://http://localhost:8080"><span class="brandico-twitter-bird"></span></a></li>
-                <li><a target="_blank" class="fa fa-facebook-square" href="http://www.facebook.com/sharer.php?u=http://http://localhost:8080x"><span class="brandico-facebook"></span></a></li>
-                <li><a target="_blank" class="fa fa-google-plus-square" href="https://plus.google.com/share?url=http://http://localhost:8080"><span class="brandico-googleplus-rect"></span></a></li>
-            </ul>
+                    <div class="header-top-button col-5 text-right">
+                        <button>RESERVATION</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div><!-- End Wrap -->
+
+        <div class="header-menu header-menu-sub pt-3">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav col-12 justify-content-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+
+                        <li class="nav-item header-menu-home">
+                            <a href="#" class="nav-link">EVENTS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">GALLERY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="main-content">
+        <div style="height: 1500px;background-color: blue;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 style="font-size: 100px;">Events</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap container">
+                <div class="game"></div>
+
+                <div class="modal-overlay">
+                    <div class="modal">
+                        <h2 class="winner">Thắng Rồi</h2>
+                        <button class="restart">Chơi Lại</button>
+                        <p class="share-text">Chia sẻ chiến thắng</p>
+                        <ul class="social">
+                            <li><a target="_blank" class="fa fa-twitter-square" href="http://twitter.com/share?url=http://http://localhost:8080"><span class="brandico-twitter-bird"></span></a></li>
+                            <li><a target="_blank" class="fa fa-facebook-square" href="http://www.facebook.com/sharer.php?u=http://http://localhost:8080x"><span class="brandico-facebook"></span></a></li>
+                            <li><a target="_blank" class="fa fa-google-plus-square" href="https://plus.google.com/share?url=http://http://localhost:8080"><span class="brandico-googleplus-rect"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Wrap -->
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer footer-sub">
+        <div class="footer-email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 footer-email-left">
+                        <p>Receive Event Updates</p>
+                    </div>
+
+                    <div class="col-6 footer-email-right">
+                        <p class="col-12 p-0"><input type="text" class="form-control form-control"></p>
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p>LOGO</p>
+                        <span>
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-skype"></i>
+								<i class="fab fa-youtube"></i>
+								<i class="fas fa-cloud"></i>
+							</span>
+                    </div>
+
+                    <div class="col-3">
+                        <p style="color: #fff;font-size: 24px;">Pages</p>
+
+                        <p>Home</p>
+                        <p>Event</p>
+                        <p>About Us</p>
+                        <p>Gallery</p>
+                        <p>Blog</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p style="color: #fff;font-size: 24px;">Hours</p>
+
+                        <p>Home</p>
+                        <p>Event</p>
+                        <p>About Us</p>
+                        <p>Gallery</p>
+                        <p>Blog</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p style="color: #fff;font-size: 24px;">Contacts</p>
+
+                        <p>Street</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <p>Copyright 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
 
 <script src="/resources/script/CheckSession.js"></script>
 <script src="/resources/script/game1.js"></script>
