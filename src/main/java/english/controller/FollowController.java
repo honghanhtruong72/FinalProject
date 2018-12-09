@@ -25,6 +25,9 @@ public class FollowController {
     @RequestMapping(value = "follow", method = POST)
     public String enterFollow(FollowEntity entity, Model model,
                               @RequestParam(value = "email") String email) {
+        if (email.equals("")) {
+            return "404";
+        }
         Matcher matcher = GlobalVar.VALID_EMAIL_ADDRESS_REGEX .matcher(email);
         if (!matcher.find()) {
             String message = "Your email Incorrect. Try again!";
@@ -42,6 +45,8 @@ public class FollowController {
         entity.setEmail(email);
         entity.setTimestamp(new Timestamp(System.currentTimeMillis()));
         followRepository.save(entity);
+        String message = "You have successfully registered";
+        model.addAttribute("message",message);
         //todo send mail
         return "home";
     }

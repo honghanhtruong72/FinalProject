@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>INDEX</title>
+	<title>Home English For Kids</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/resources/template/css/bootstrap.min.css">
+	<script src="/resources/template/js/jquery.min.js"></script>
+	<script src="/resources/template/js/popper.min.js"></script>
+	<script src="/resources/template/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -26,16 +26,15 @@
 				<div class="container">
 					<div class="row pt-3">
 						<div class="header-top-left col-6 text-left">
-							<span><i class="fas fa-phone"></i> (123) 456-7890</span>
+							<span><i class="fas fa-phone"></i> (+84) 913646477</span>
 						</div>
 
 						<div class="header-top-right col-6 text-right">
 							<span>
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-skype"></i>
-								<i class="fab fa-youtube"></i>
-								<i class="fas fa-cloud"></i>
+								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
+								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
+								<a href="https://www.youtube.com/channel/UC1QKzkXXN5ffb1F1avdb_Rw?view_as=subscriber" target="_blank" class="fs-18 p-r-20 fab fa-youtube"></a>
+								<a href="https://www.instagram.com/" target="_blank" class="fs-18 p-r-20 fab fa-instagram"></a>
 							</span>
 						</div>
 					</div>
@@ -46,7 +45,7 @@
 						 </div>
 
 						 <div class="header-top-button col-5 text-right">
-						 	<button>RESERVATION</button>
+						 	<button onclick="window.location.href = 'login'">SIGN UP</button>
 						 </div>
 					</div>
 				</div>
@@ -56,28 +55,28 @@
 				<div class="container">
 					<div class="row">
 						<ul class="nav col-12 justify-content-center">
-							<li class="nav-item" id="btn_home">
-								<a href="#" class="nav-link" style="color: #fff;">HOME</a>
+							<li class="nav-item header-menu-home" id="btn_home">
+								<a href="home" class="nav-link" style="color: #fff;">HOME</a>
 							</li>
 
 							<li class="nav-item" id="btn_abc">
-								<a href="#" class="nav-link">ABC</a>
+								<a href="learning?categoryId=1" class="nav-link">ABC</a>
 							</li>
 
 							<li class="nav-item" id="btn_topic">
-								<a href="#" class="nav-link">TOPIC</a>
+								<a href="learning?categoryId=2" class="nav-link">TOPIC</a>
 							</li>
 
 							<li class="nav-item" id="btn_song">
-								<a href="#" class="nav-link">SONG</a>
+								<a href="learning?categoryId=4" class="nav-link">SONG</a>
 							</li>
 
 							<li class="nav-item" id="btn_game">
-								<a href="#" class="nav-link">GAME</a>
+								<a href="learning?categoryId=3" class="nav-link">GAME</a>
 							</li>
 
 							<li class="nav-item" id="btn_contact">
-								<a href="#" class="nav-link">CONTACT</a>
+								<a href="contact" class="nav-link">CONTACT</a>
 							</li>
 						</ul>
 					</div>
@@ -128,29 +127,26 @@
 
 			<div class="main-party">
 				<div class="container">
-					<div class="row">
-						<p class="col-12 text-center">Study English Content</p>
-					</div>
 
-					<div class="row">
+					<div class="row main-party-button">
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/abc.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center">ABC</button></p>
+							<p class="col-12 text-center"><button class="text-center" style="background-color: #ff0066;">ABC</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/topic.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center">Topic</button></p>
+							<p class="col-12 text-center"><button class="text-center" style="background-color: #00ccff">Topic</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/game.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center">Game</button></p>
+							<p class="col-12 text-center"><button class="text-center" style="background-color: #0000ff">Game</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/song.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center">Song</button></p>
+							<p class="col-12 text-center"><button class="text-center" style="background-color: #ff6600">Song</button></p>
 						</div>
 					</div>
 				</div>
@@ -159,12 +155,11 @@
 			<div class="main-team">
 				<div class="contaier">
 					<div class="row">
-						<div class="col-6 text-center">
+						<div class="main-team-img col-6 text-center">
 							<img src="/resources/template/img/7.jpg" class="img-fluid">
 						</div>
 
-						<div class="col-6 text-center">
-							<p>Meet the Team</p>
+						<div class="main-team-title col-6 text-center">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -179,12 +174,9 @@
 
 			<div class="main-event">
 				<div class="container">
-					<div class="row">
-						<p class="col-12 text-center">Latest Event</p>
-					</div>
 
 					<div class="row">
-						<div class="col-3 text-center">
+						<div class="col-12 text-center main-event-img">
 							<img src="/resources/template/img/coming-soon.jpg" class="img-fluid">
 							<!-- <p class="col-12 text-center"><button class="text-center">Coloring Party</button></p> -->
 						</div>
@@ -207,14 +199,16 @@
 			<div class="footer-email">
 				<div class="container">
 					<div class="row">
-						<div class="col-6">
-							<p>Receive Event Updates</p>
+						<div class="col-6 footer-email-left">
+							<p>Receive Updates</p>
 						</div>
-
-						<div class="col-6">
-							<p class="col-12"><input type="text" name=""></p>
-							<button>SIGN UP</button>
-						</div>
+						<form method="post" id="login-nav" action="follow">
+							<div class="col-6 footer-email-right">
+								<p class="col-12 p-0" ><input type="email" class="form-control form-control" placeholder="your-email@gmail.com                   "
+															  style="width: auto" required name="email"></p>
+								<button type="submit">FOLLOW</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -222,41 +216,31 @@
 			<div class="footer-contact">
 				<div class="container">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-4">
 							<p>LOGO</p>
 							<span>
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-skype"></i>
-								<i class="fab fa-youtube"></i>
-								<i class="fas fa-cloud"></i>
+								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
+								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
+								<a href="https://www.youtube.com/channel/UC1QKzkXXN5ffb1F1avdb_Rw?view_as=subscriber" target="_blank" class="fs-18 p-r-20 fab fa-youtube"></a>
+								<a href="https://www.instagram.com/" target="_blank" class="fs-18 p-r-20 fab fa-instagram"></a>
 							</span>
 						</div>
 
-						<div class="col-3">
-							<p>Pages</p>
+						<div class="col-4">
+							<p style="color: #fff;font-size: 24px;">Pages</p>
 
 							<p>Home</p>
-							<p>Event</p>
-							<p>About Us</p>
-							<p>Gallery</p>
-							<p>Blog</p>
+							<p>ABC</p>
+							<p>TOPIC</p>
+							<p>SONG</p>
+							<p>GAME</p>
 						</div>
 
-						<div class="col-3">
-							<p>Hours</p>
-
-							<p>Home</p>
-							<p>Event</p>
-							<p>About Us</p>
-							<p>Gallery</p>
-							<p>Blog</p>
-						</div>
-
-						<div class="col-3">
-							<p>Contacts</p>
-
-							<p>Street</p>
+						<div class="col-4">
+							<p style="color: #fff;font-size: 24px;">Contacts</p>
+							<p>54 Nguyen Luong Bang, Da Nang</p>
+							<p>+84 000 0000</p>
+							<p>honghanhtruong72@gmail.com</p>
 						</div>
 					</div>
 				</div>
@@ -265,12 +249,13 @@
 			<div class="footer-copyright">
 				<div class="container">
 					<div class="row">
-						<p>Copyright 2018</p>
+						<%--<div style="float: none; margin: 0 auto;">--%>
+							<p>Developed by Hong Hanh Truong</p>
+						<%--</div>--%>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
 </body>
-
 </html>

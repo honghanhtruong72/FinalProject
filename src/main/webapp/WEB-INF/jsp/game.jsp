@@ -3,14 +3,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-    <title>Game</title>
+    <title>Game English For Kids</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/resources/template/css/bootstrap.min.css">
+    <script src="/resources/template/js/jquery.min.js"></script>
+    <script src="/resources/template/js/popper.min.js"></script>
+    <script src="/resources/template/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -26,16 +26,15 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="header-top-left col-6 text-left">
-                        <span><i class="fas fa-phone"></i> (123) 456-7890</span>
+                        <span><i class="fas fa-phone"></i> (+84) 913646477</span>
                     </div>
 
                     <div class="header-top-right col-6 text-right">
 							<span>
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-skype"></i>
-								<i class="fab fa-youtube"></i>
-								<i class="fas fa-cloud"></i>
+								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
+								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
+								<a href="https://www.youtube.com/channel/UC1QKzkXXN5ffb1F1avdb_Rw?view_as=subscriber" target="_blank" class="fs-18 p-r-20 fab fa-youtube"></a>
+								<a href="https://www.instagram.com/" target="_blank" class="fs-18 p-r-20 fab fa-instagram"></a>
 							</span>
                     </div>
                 </div>
@@ -50,7 +49,7 @@
                     </div>
 
                     <div class="header-top-button col-5 text-right">
-                        <button>RESERVATION</button>
+                        <button onclick="window.location.href = 'login'">SIGN UP</button>
                     </div>
                 </div>
             </div>
@@ -60,24 +59,28 @@
             <div class="container">
                 <div class="row">
                     <ul class="nav col-12 justify-content-center">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">HOME</a>
+                        <li class="nav-item" id="btn_home">
+                            <a href="home" class="nav-link">HOME</a>
                         </li>
 
-                        <li class="nav-item header-menu-home">
-                            <a href="#" class="nav-link">EVENTS</a>
+                        <li class="nav-item" id="btn_abc">
+                            <a href="learning?categoryId=1" class="nav-link">ABC</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">GALLERY</a>
+                        <li class="nav-item" id="btn_topic">
+                            <a href="learning?categoryId=2" class="nav-link">TOPIC</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">BLOG</a>
+                        <li class="nav-item" id="btn_song">
+                            <a href="learning?categoryId=4" class="nav-link">SONG</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">CONTACTS</a>
+                        <li class="nav-item header-menu-home" id="btn_game">
+                            <a href="learning?categoryId=3" class="nav-link" style="color: #fff;">GAME</a>
+                        </li>
+
+                        <li class="nav-item" id="btn_contact">
+                            <a href="contact" class="nav-link">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -85,15 +88,12 @@
         </div>
     </header>
 
-
-
-
     <main class="main-content">
-        <div style="height: 1500px;background-color: blue;">
+        <div style="height: 1000px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 style="font-size: 100px;">Events</h1>
+                        <h1 style="font-size: 100px;">GAME</h1>
                     </div>
                 </div>
             </div>
@@ -117,53 +117,20 @@
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footer footer-sub">
+    <footer class="footer">
         <div class="footer-email">
             <div class="container">
                 <div class="row">
                     <div class="col-6 footer-email-left">
-                        <p>Receive Event Updates</p>
+                        <p>Receive Updates</p>
                     </div>
-
-                    <div class="col-6 footer-email-right">
-                        <p class="col-12 p-0"><input type="text" class="form-control form-control"></p>
-                        <button>SIGN UP</button>
-                    </div>
+                    <form method="post" id="login-nav" action="follow">
+                        <div class="col-6 footer-email-right">
+                            <p class="col-12 p-0" ><input type="email" class="form-control form-control" placeholder="your-email@gmail.com                   "
+                                                          style="width: auto" required name="email"></p>
+                            <button type="submit">FOLLOW</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -171,41 +138,31 @@
         <div class="footer-contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <p>LOGO</p>
                         <span>
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-skype"></i>
-								<i class="fab fa-youtube"></i>
-								<i class="fas fa-cloud"></i>
+								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
+								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
+								<a href="https://www.youtube.com/channel/UC1QKzkXXN5ffb1F1avdb_Rw?view_as=subscriber" target="_blank" class="fs-18 p-r-20 fab fa-youtube"></a>
+								<a href="https://www.instagram.com/" target="_blank" class="fs-18 p-r-20 fab fa-instagram"></a>
 							</span>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-4">
                         <p style="color: #fff;font-size: 24px;">Pages</p>
 
                         <p>Home</p>
-                        <p>Event</p>
-                        <p>About Us</p>
-                        <p>Gallery</p>
-                        <p>Blog</p>
+                        <p>ABC</p>
+                        <p>TOPIC</p>
+                        <p>SONG</p>
+                        <p>GAME</p>
                     </div>
 
-                    <div class="col-3">
-                        <p style="color: #fff;font-size: 24px;">Hours</p>
-
-                        <p>Home</p>
-                        <p>Event</p>
-                        <p>About Us</p>
-                        <p>Gallery</p>
-                        <p>Blog</p>
-                    </div>
-
-                    <div class="col-3">
+                    <div class="col-4">
                         <p style="color: #fff;font-size: 24px;">Contacts</p>
-
-                        <p>Street</p>
+                        <p>54 Nguyen Luong Bang, Da Nang</p>
+                        <p>+84 000 0000</p>
+                        <p>honghanhtruong72@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -214,7 +171,9 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <p>Copyright 2018</p>
+                    <%--<div style="float: none; margin: 0 auto;">--%>
+                    <p>Developed by Hong Hanh Truong</p>
+                    <%--</div>--%>
                 </div>
             </div>
         </div>

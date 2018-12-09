@@ -99,7 +99,7 @@
         buildHTML: function(){
             var frag = '';
             this.$cards.each(function(k, v){
-                frag += '<div class="card col-sm-3" data-id="'+ v.id +'"><div class="inside">\
+                frag += '<div class="card col-sm-2" data-id="'+ v.id +'"><div class="inside">\
                 <div class="front"><img src="'+ v.img +'"\
                 alt="'+ v.name +'" /></div>\
                 <div class="back"><img src="/resources/images/bee1.png"\
@@ -160,6 +160,16 @@
             name: "sass",
             img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sass-logo.png",
             id: 10
+        },
+        {
+            name: "bbb",
+            img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sass-logo.png",
+            id: 11
+        },
+        {
+            name: "ccc",
+            img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sass-logo.png",
+            id: 12
         },
 
     ];
