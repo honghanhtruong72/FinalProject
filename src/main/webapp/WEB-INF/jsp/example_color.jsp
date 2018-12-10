@@ -1,10 +1,15 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: PC
+  Date: 12/5/2018
+  Time: 8:32 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Animal English For Kids</title>
+    <title>Color English For Kids</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +24,6 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/template/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/resources/template/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/animal.css">
 </head>
 <body>
 <!--BEGIN HEADER-->
@@ -97,55 +101,89 @@
     </header>
     <%--ENDHEADER--%>
     <main class="main-content">
-        <div style="height: 1300px;background-color: #0d41a8;">
+        <div style="height: 900px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 style="font-size: 70px;">Let's Go! Topic Animal</h1>
+                        <h1 style="font-size: 50px;">Please submit the correct answer!!!</h1>
                     </div>
                 </div>
             </div>
             <div class="wrap-size container">
-                <img src="/resources/images/animal/backgroundanimal.png">
-                <div class="cat myImgHover myImgSet">
-                    <img src="/resources/images/animal/cattx.png" id="cat" onclick="onClickAnimal(this)">
-                </div>
-                <div class="frog myImgHover myImgSet">
-                    <img src="/resources/images/animal/frogtx.png" id="frog" onclick="onClickAnimal(this)">
-                </div>
-                <div class="monkey myImgHover myImgSet">
-                    <img src="/resources/images/animal/monkeytx.png" id="monkey" onclick="onClickAnimal(this)">
-                </div>
-                <div class="pig myImgHover myImgSet">
-                    <img src="/resources/images/animal/pigtx.png" id="pig" onclick="onClickAnimal(this)">
-                </div>
-                <div class="dolphin myImgHover myImgSet">
-                    <img src="/resources/images/animal/dolphintx.png" id="dolphin" onclick="onClickAnimal(this)">
-                </div>
-                <div class="shark myImgHover myImgSet">
-                    <img src="/resources/images/animal/sharktx.png" id="shark" onclick="onClickAnimal(this)">
-                </div>
-                <div class="duck myImgHover myImgSet">
-                    <img src="/resources/images/animal/ducktx.png" id="duck" onclick="onClickAnimal(this)">
-                </div>
-                <div class="tiger myImgHover myImgSet">
-                    <img src="/resources/images/animal/tigertx.png" id="tiger" onclick="onClickAnimal(this)">
-                </div>
-                <div class="dog myImgHover myImgSet">
-                    <img src="/resources/images/animal/dogtx.png" id="dog" onclick="onClickAnimal(this)">
-                </div>
-                <div class="horse myImgHover myImgSet">
-                    <img src="/resources/images/animal/horsetx.png" id="horse" onclick="onClickAnimal(this)">
-                </div>
-                <div class="zebra myImgHover myImgSet">
-                    <img src="/resources/images/animal/zebratx.png" id="zebra" onclick="onClickAnimal(this)">
-                </div>
-                <div class="octopus myImgHover myImgSet">
-                    <img src="/resources/images/animal/octopustx.png" id="octopus" onclick="onClickAnimal(this)">
-                </div>
-                <div class="btn_practice">
-                    <a href="example?id=4"><img style="width: 250px; height: 150px" src="/resources/images/next.png" id="next-animal-1"></a>
-                </div>
+                <form id="1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-right" id="image1"><img src="/resources/images/color/black.png"
+                                                                         style="width: 250px; height: 250px">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" style="padding-top: 10%; left: 10%">This is
+                                <select id="select1">
+                                    <option value="">Black</option>
+                                    <option value="">Blue</option>
+                                    <option value="">Green</option>
+                                    <option value="">Pink</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 50px"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-right" id="image2"><img src="/resources/images/color/red.png"
+                                                                         style="width: 250px; height: 250px">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" style="padding-top: 10%; left: 10%">This is
+                                <select id="select2">
+                                    <option value="">Green</option>
+                                    <option value="">Blue</option>
+                                    <option value="">Pink</option>
+                                    <option value="">Red</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-secondary" style="left: 30%" onclick="check()">
+                                    Submit
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal" id="myModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Congratulations</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close" onclick="back()">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body" id="resultExample">
+                                                .../...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                                        onclick="back()">Back
+                                                </button>
+                                                <button type="button" class="btn btn-primary" onclick="closeModal()">Try
+                                                    Again
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -219,17 +257,39 @@
     </footer>
 </div>
 <!-- END FOOTER -->
-<script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="/resources/script/CheckSession.js"></script>
+
 <script>
-    function onClickAnimal(image) {
-        //play audio
-        var audioElement = document.createElement('audio');
-        var id = image.id.toString();
-        var filePath = "/resources/audio/" + id + ".mp3";
-        audioElement.setAttribute('src', filePath);
-        audioElement.play();
+    this.listResult = ['Black', 'Red'];
+
+    function check() {
+        document.getElementById('myModal').style.display = 'block';
+        var listCheck = [];
+        var select1 = document.getElementById('select1');
+        var select2 = document.getElementById('select2');
+        var value1 = select1.options[select1.selectedIndex].text;
+        var value2 = select2.options[select2.selectedIndex].text;
+        listCheck.push(value1);
+        listCheck.push(value2);
+        var count = 0;
+        var numberExam = listCheck.length;
+        for (var i = 0; i < numberExam; i++) {
+            if (listCheck[i] === listResult[i]) {
+                count++;
+            }
+        }
+        var data = "<div class=\"modal-body\" id=\"resultExample\"> You have complete " + count.toString() + "/" + numberExam.toString() + "</div>";
+        $("#resultExample").replaceWith(data);
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+        location.reload();
+    }
+
+    function back() {
+        window.location.replace("http://localhost:8080/learning?categoryId=2");
     }
 </script>
+
 </body>
 </html>

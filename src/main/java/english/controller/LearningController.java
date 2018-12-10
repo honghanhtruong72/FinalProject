@@ -89,4 +89,18 @@ public class LearningController {
         UserEntity userEntity = (UserEntity) session.getAttribute("user");
         return "learningsong";
     }
+
+    @RequestMapping(value = "example")
+    public String showExample(Model model,
+                              HttpServletRequest request,
+                              @RequestParam(name = "id") String id) {
+        switch (Integer.valueOf(id)) {
+            case TopicConst.TOPIC_ANIMAL:
+                return "example_animal";
+            case TopicConst.TOPIC_COLOR:
+                return "example_color";
+            default:
+                return "404";
+        }
+    }
 }

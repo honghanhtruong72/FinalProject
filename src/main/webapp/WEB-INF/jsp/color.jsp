@@ -98,7 +98,7 @@
     <%--ENDHEADER--%>
 
     <main class="main-content">
-        <div style="height: 900px;background-color: #0d41a8;">
+        <div style="height: 1000px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -134,6 +134,9 @@
                 </div>
                 <div class="orange myImgHover myImgSet">
                     <img src="/resources/images/color/orangetx.png" id="orange" onclick="onClickColor(this)">
+                </div>
+                <div class="btn_practice">
+                    <a href="example?id=2"><img style="width: 250px; height: 150px" src="/resources/images/next.png" id="next-animal-1"></a>
                 </div>
             </div>
         </div>

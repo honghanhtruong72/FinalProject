@@ -90,3 +90,12 @@
     left: 1170px;
     transform: translate(-50%, -50%);
 }
+.btn_practice {
+    position: absolute;
+    top: 1020px;
+    left: 1155px;
+    width: 250px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+}
