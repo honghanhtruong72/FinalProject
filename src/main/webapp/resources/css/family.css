@@ -4,67 +4,67 @@
 }
 .gf{
     position: absolute;
-    top: 232px;
-    left: 706px;
+    top: 159px;
+    left: 722px;
     transform: translate(-50%, -50%);
 }
 .gm{
     position: absolute;
-    top: 232px;
-    left: 912px;
+    top: 159px;
+    left: 928px;
     transform: translate(-50%, -50%);
 }
 .mother{
     position: absolute;
-    top: 424px;
-    left: 607px;
+    top: 350px;
+    left: 623px;
     transform: translate(-50%, -50%);
 }
 .father{
     position: absolute;
-    top: 424px;
-    left: 418px;
+    top: 350px;
+    left: 434px;
     transform: translate(-50%, -50%);
 }
 .uncle1{
     position: absolute;
-    top: 424px;
-    left: 811px;
+    top: 350px;
+    left: 827px;
     transform: translate(-50%, -50%);
 }
 .uncle2{
     position: absolute;
-    top: 424px;
-    left: 1015px;
+    top: 350px;
+    left: 1031px;
     transform: translate(-50%, -50%);
 }
 .aunt{
     position: absolute;
-    top: 424px;
-    left: 1204px;
+    top: 350px;
+    left: 1220px;
     transform: translate(-50%, -50%);
 }
 .me{
     position: absolute;
-    top: 604px;
-    left: 512px;
+    top: 530px;
+    left: 528px;
     transform: translate(-50%, -50%);
 }
 .brother{
     position: absolute;
-    top: 604px;
-    left: 345px;
+    top: 530px;
+    left: 361px;
     transform: translate(-50%, -50%);
 }
 .sister{
     position: absolute;
-    top: 604px;
-    left: 680px;
+    top: 530px;
+    left: 696px;
     transform: translate(-50%, -50%);
 }
 .cousin{
     position: absolute;
-    top: 604px;
-    left: 1110px;
+    top: 530px;
+    left: 1126px;
     transform: translate(-50%, -50%);
 }

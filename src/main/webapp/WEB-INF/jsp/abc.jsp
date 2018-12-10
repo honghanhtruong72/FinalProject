@@ -65,8 +65,8 @@
                             <a href="home" class="nav-link">HOME</a>
                         </li>
 
-                        <li class="nav-item" id="btn_abc">
-                            <a href="learning?categoryId=1" class="nav-link">ABC</a>
+                        <li class="nav-item header-menu-home" id="btn_abc">
+                            <a href="learning?categoryId=1" class="nav-link"  style="color: #fff;">ABC</a>
                         </li>
 
                         <li class="nav-item" id="btn_topic">
@@ -77,8 +77,8 @@
                             <a href="learning?categoryId=4" class="nav-link">SONG</a>
                         </li>
 
-                        <li class="nav-item header-menu-home" id="btn_game">
-                            <a href="learning?categoryId=3" class="nav-link" style="color: #fff;">GAME</a>
+                        <li class="nav-item" id="btn_game">
+                            <a href="learning?categoryId=3" class="nav-link">GAME</a>
                         </li>
 
                         <li class="nav-item" id="btn_contact">
@@ -91,67 +91,67 @@
     </header>
 <!--END HEADER-->
     <main class="main-content">
-        <div style="height: 1000px;background-color: #0d41a8;">
+        <div style="height: 700px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 style="font-size: 100px;">GAME</h1>
+                        <h1 style="font-size: 100px;">ALPHABET</h1>
                     </div>
                 </div>
             </div>
             <div class="wrap container">
                 <div class="A myImgSet myImgHover">
-                    <img id="myImgA" src="/resources/images/abc/A.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="a" src="/resources/images/abc/A.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="B myImgSet myImgHover">
-                    <img id="myImgB" src="/resources/images/abc/B.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="b" src="/resources/images/abc/B.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="C myImgSet myImgHover">
-                    <img id="myImgC" src="/resources/images/abc/C.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="c" src="/resources/images/abc/C.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="D myImgSet myImgHover">
-                    <img id="myImgD" src="/resources/images/abc/D.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="d" src="/resources/images/abc/D.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="E myImgSet myImgHover">
-                    <img id="myImgE" src="/resources/images/abc/E.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="e" src="/resources/images/abc/E.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="F myImgSet myImgHover">
-                    <img id="myImgF" src="/resources/images/abc/F.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="f" src="/resources/images/abc/F.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="G myImgSet myImgHover">
-                    <img id="myImgG" src="/resources/images/abc/G.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="g" src="/resources/images/abc/G.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="H myImgSet myImgHover">
-                    <img id="myImgH" src="/resources/images/abc/H.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="h" src="/resources/images/abc/H.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="I myImgSet myImgHover">
-                    <img id="myImgI" src="/resources/images/abc/I.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="i" src="/resources/images/abc/I.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="J myImgSet myImgHover">
-                    <img id="myImgJ" src="/resources/images/abc/J.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="j" src="/resources/images/abc/J.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="K myImgSet myImgHover">
-                    <img id="myImgK" src="/resources/images/abc/K.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="k" src="/resources/images/abc/K.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="L myImgSet myImgHover">
-                    <img id="myImgL" src="/resources/images/abc/L.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="l" src="/resources/images/abc/L.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="M myImgSet myImgHover">
-                    <img id="myImgM" src="/resources/images/abc/M.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="m" src="/resources/images/abc/M.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="N myImgSet myImgHover">
-                    <img id="myImgN" src="/resources/images/abc/N.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="n" src="/resources/images/abc/N.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="O myImgSet myImgHover">
-                    <img id="myImgO" src="/resources/images/abc/O.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="o" src="/resources/images/abc/O.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="P myImgSet myImgHover">
-                    <img id="myImgP" src="/resources/images/abc/P.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="p" src="/resources/images/abc/P.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="Q myImgSet myImgHover">
-                    <img id="myImgQ" src="/resources/images/abc/Q.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="q" src="/resources/images/abc/Q.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="R myImgSet myImgHover">
-                    <img id="myImgR" src="/resources/images/abc/R.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="r" src="/resources/images/abc/R.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="S myImgSet myImgHover">
-                    <img id="myImgS" src="/resources/images/abc/S.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="s" src="/resources/images/abc/S.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="T myImgSet myImgHover">
-                    <img id="myImgT" src="/resources/images/abc/T.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="t" src="/resources/images/abc/T.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="U myImgSet myImgHover">
-                    <img id="myImgU" src="/resources/images/abc/U.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="u" src="/resources/images/abc/U.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="V myImgSet myImgHover">
-                    <img id="myImgV" src="/resources/images/abc/V.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="v" src="/resources/images/abc/V.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="W myImgSet myImgHover">
-                    <img id="myImgW" src="/resources/images/abc/W.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="w" src="/resources/images/abc/W.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="X myImgSet myImgHover">
-                    <img id="myImgX" src="/resources/images/abc/X.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="x" src="/resources/images/abc/X.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="Y myImgSet myImgHover">
-                    <img id="myImgY" src="/resources/images/abc/Y.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="y" src="/resources/images/abc/Y.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <div class="Z myImgSet myImgHover">
-                    <img id="myImgZ" src="/resources/images/abc/Z.png" width="87" height="87" onclick="onclickImage(this)"></div>
+                    <img id="z" src="/resources/images/abc/Z.png" width="87" height="87" onclick="onclickImage(this)"></div>
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
@@ -228,8 +228,14 @@
 <script>
     // Get the modal
     function onclickImage(imgId) {
-        var modal = document.getElementById('myModal');
+        //play audio
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + imgId.id.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
 
+        //modal
+        var modal = document.getElementById('myModal');
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var img = document.getElementById(imgId.id);
         var modalImg = document.getElementById("modalId");
@@ -244,7 +250,7 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
-        }
+        };
     }
 </script>
 

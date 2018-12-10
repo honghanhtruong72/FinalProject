@@ -131,22 +131,22 @@
 					<div class="row main-party-button">
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/abc.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center" style="background-color: #ff0066;">ABC</button></p>
+							<p class="col-12 text-center"><button onclick="window.location.href = 'learning?categoryId=1'" class="text-center" style="background-color: #ff0066;">ABC</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/topic.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center" style="background-color: #00ccff">Topic</button></p>
+							<p class="col-12 text-center"><button onclick="window.location.href = 'learning?categoryId=2'" class="text-center" style="background-color: #00ccff">Topic</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/game.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center" style="background-color: #0000ff">Game</button></p>
+							<p class="col-12 text-center"><button onclick="window.location.href = 'learning?categoryId=3'" class="text-center" style="background-color: #0000ff">Game</button></p>
 						</div>
 
 						<div class="col-3 text-center">
 							<img src="/resources/template/img/song.jpg" class="img-fluid">
-							<p class="col-12 text-center"><button class="text-center" style="background-color: #ff6600">Song</button></p>
+							<p class="col-12 text-center"><button onclick="window.location.href = 'learning?categoryId=4'" class="text-center" style="background-color: #ff6600">Song</button></p>
 						</div>
 					</div>
 				</div>

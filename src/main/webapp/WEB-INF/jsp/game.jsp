@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Game English For Kids</title>
@@ -17,10 +18,11 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/template/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/resources/template/css/style.css">
-    <link rel="stylesheet" href="/resources/css/game1.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/game1.css">
 </head>
 <body>
 <div class="wrapper-sub">
+    <%--BEGINHEADER--%>
     <header class="header header-sub">
         <div class="header-top header-top-sub">
             <div class="container">
@@ -87,6 +89,7 @@
             </div>
         </div>
     </header>
+    <%--ENDHEADER--%>
 
     <main class="main-content">
         <div style="height: 1000px;background-color: #0d41a8;">
@@ -116,7 +119,7 @@
         </div>
     </main>
 
-
+    <%--BEGINFOOTER--%>
     <footer class="footer">
         <div class="footer-email">
             <div class="container">

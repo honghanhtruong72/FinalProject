@@ -268,3 +268,21 @@ a {
 	min-height: 500px;
 	padding-bottom: 20px;
 }
+.wrap-topic {
+	position: relative;
+	top: 136px;
+	height: 100%;
+	min-height: 500px;
+	padding-bottom: 20px;
+	width: 100vw;
+	min-width: 1366px;
+}
+.wrap-family {
+	position: relative;
+	top: 68px;
+	height: 100%;
+	min-height: 500px;
+	padding-bottom: 20px;
+	width: 100vw;
+	min-width: 1366px;
+}
