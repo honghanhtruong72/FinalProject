@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -65,10 +66,10 @@ public class LearningController {
                 data = "number";
                 break;
             case TopicConst.TOPIC_ANIMAL:
-                data = "example_animal";
+                data = "animal";
                 break;
             case TopicConst.TOPIC_FURNITURE:
-                data = "example_animal2";
+                data = "furniture";
                 break;
             case TopicConst.TOPIC_BODY:
                 data = "body";

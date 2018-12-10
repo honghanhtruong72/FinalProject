@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/topic.css">
 </head>
 <body>
+<a name="top"></a>
 <div class="wrapper-sub">
     <%--BEGINHEADER--%>
     <header class="header header-sub">
@@ -91,7 +92,7 @@
     </header>
     <%--ENDHEADER--%>
 
-    <main class="main-content">
+    <main class="main-content" id="main-topic">
         <div style="height: 1800px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
@@ -132,8 +133,8 @@
                     </a>
                 </div>
                 <div class="figure-topic">
-                    <a href="topic?topicId=5">
-                        <img src="/resources/images/furniture_1.jpg" alt="Thumb" width="657" height="500" />
+                    <a onclick="replaceFunc()" style="cursor:pointer;">
+                        <img src="/resources/images/furniture_1.jpg" id="topic-furniture" alt="Thumb" width="657" height="500" />
                         <div class="figcaption-topic"><div style="font-size: 60px">Furniture</div></div>
                     </a>
                 </div>
@@ -206,7 +207,48 @@
     </footer>
 </div>
 </body>
-
+<script>
+    function replaceFunc() {
+        location.href = "#top";
+        $('#main-topic').replaceWith('<main class="main-content" id="main-topic">\n' +
+            '        <div style="height: 1300px;background-color: #0d41a8;">\n' +
+            '            <div class="container">\n' +
+            '                <div class="row">\n' +
+            '                    <div class="col-12" style="top: 68px">\n' +
+            '                        <h1 style="font-size: 100px;">Topic Furniture</h1>\n' +
+            '                    </div>\n' +
+            '                </div>\n' +
+            '            </div>\n' +
+            '            <div class="wrap-topic container">\n' +
+            '            \t<div class="figure-topic">\n' +
+            '                    <a href="topic?topicId=1">\n' +
+            '                        <img src="/resources/images/furniture/living.jpg" alt="Thumb" width="657" height="500" />\n' +
+            '                        <div class="figcaption-topic"><div style="font-size: 60px">Living Room</div></div>\n' +
+            '                    </a>\n' +
+            '                </div>\n' +
+            '                <div class="figure-topic">\n' +
+            '                    <a href="topic?topicId=2">\n' +
+            '                        <img src="/resources/images/furniture/kitchen.jpg" alt="Thumb" width="657" height="500" />\n' +
+            '                        <div class="figcaption-topic"><div style="font-size: 60px">Kitchen Room</div></div>\n' +
+            '                    </a>\n' +
+            '                </div>\n' +
+            '                <div class="figure-topic">\n' +
+            '                    <a href="topic?topicId=6">\n' +
+            '                        <img src="/resources/images/furniture/bedroom.jpg" alt="Thumb" width="657" height="500" />\n' +
+            '                        <div class="figcaption-topic"><div style="font-size: 60px">Bedroom</div></div>\n' +
+            '                    </a>\n' +
+            '                </div>\n' +
+            '                <div class="figure-topic">\n' +
+            '                    <a href="topic?topicId=6">\n' +
+            '                        <img src="/resources/images/furniture/bathroom.jpg" alt="Thumb" width="657" height="500" />\n' +
+            '                        <div class="figcaption-topic"><div style="font-size: 60px">Bathroom</div></div>\n' +
+            '                    </a>\n' +
+            '                </div>\n' +
+            '            </div>\n' +
+            '        </div>\n' +
+            '    </main>');
+    }
+</script>
 <script src="/resources/script/CheckSession.js"></script>
 <script src="/resources/script/game1.js"></script>
 </html>

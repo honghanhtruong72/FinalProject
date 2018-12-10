@@ -6,55 +6,55 @@
 .myImgHover:hover {opacity: 0.7;}
 .blue{
     position: absolute;
-    top: 228px;
+    top: 155px;
     left:250px;
     transform: translate(-50%, -50%);
 }
 .orange{
     position: absolute;
-    top: 420px;
+    top: 342px;
     left:250px;
     transform: translate(-50%, -50%);
 }
 .green{
     position: absolute;
-    top: 228px;
+    top: 155px;
     left:1070px;
     transform: translate(-50%, -50%);
 }
 .pink{
     position: absolute;
-    top: 420px;
+    top: 342px;
     left:660px;
     transform: translate(-50%, -50%);
 }
 .red{
     position: absolute;
-    top: 620px;
+    top: 542px;
     left:250px;
     transform: translate(-50%, -50%);
 }
 .black{
     position: absolute;
-    top: 228px;
+    top: 155px;
     left:660px;
     transform: translate(-50%, -50%);
 }
 .purple{
     position: absolute;
-    top: 620px;
+    top: 542px;
     left:660px;
     transform: translate(-50%, -50%);
 }
 .white{
     position: absolute;
-    top: 620px;
+    top: 542px;
     left:1070px;
     transform: translate(-50%, -50%);
 }
 .yellow{
     position: absolute;
-    top: 420px;
+    top: 342px;
     left:1070px;
     transform: translate(-50%, -50%);
 }

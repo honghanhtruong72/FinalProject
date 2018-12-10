@@ -94,7 +94,7 @@
 					</div>
 
 					<div class="row">
-						<p class="header-title-3 col-12 text-center"><button>DISCOVER NOW</button></p>
+						<p class="header-title-3 col-12 text-center"><button onclick="window.location.href = '#party'">DISCOVER NOW</button></p>
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 					</div>
 				</div>
 			</div>
-
+			<a name="party"></a>
 			<div class="main-party">
 				<div class="container">
 

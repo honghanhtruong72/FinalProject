@@ -1,10 +1,3 @@
-
-body {
-    background: #9999ff;
-
-}
-
-
 .myImgSet {
     cursor: pointer;
     transition: 0.2s;
@@ -16,88 +9,84 @@ body {
 
 .cat {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 165px;
     transform: translate(-50%, -50%);
 }
 
 .pig {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 520px;
     transform: translate(-50%, -50%);
 }
 
 .dog {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 850px;
     transform: translate(-50%, -50%);
 }
 
 .frog {
     position: absolute;
-    top: 630px;
+    top: 560px;
     left: 165px;
     transform: translate(-50%, -50%);
 }
 
 .horse {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 1170px;
     transform: translate(-50%, -50%);
 }
 
 .monkey {
     position: absolute;
-    top: 950px;
+    top: 880px;
     left: 165px;
     transform: translate(-50%, -50%);
 }
 
 .dolphin {
     position: absolute;
-    top: 630px;
+    top: 560px;
     left: 520px;
     transform: translate(-50%, -50%);
 }
 
 .duck {
     position: absolute;
-    top: 630px;
+    top: 560px;
     left: 850px;
     transform: translate(-50%, -50%);
 }
 
 .zebra {
     position: absolute;
-    top: 630px;
+    top: 560px;
     left: 1170px;
     transform: translate(-50%, -50%);
 }
 
 .shark {
     position: absolute;
-    top: 950px;
+    top: 880px;
     left: 520px;
     transform: translate(-50%, -50%);
 }
 
 .tiger {
     position: absolute;
-    top: 950px;
+    top: 880px;
     left: 850px;
     transform: translate(-50%, -50%);
 }
 
 .octopus {
     position: absolute;
-    top: 950px;
+    top: 880px;
     left: 1170px;
     transform: translate(-50%, -50%);
-}
-
-.footer {
-    margin-top: -1400px;
 }

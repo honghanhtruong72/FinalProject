@@ -6,103 +6,120 @@
 }
 .hair{
     position: absolute;
-    top: 96px;
+    top: 141px;
     left:1204px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .ear{
     position: absolute;
-    top: 213px;
+    top: 257px;
     left:1220px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .tooth{
     position: absolute;
-    top: 274px;
+    top: 319px;
     left:1212px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .neck{
     position: absolute;
-    top: 319px;
+    top: 364px;
     left:1290px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .arm{
     position: absolute;
-    top: 364px;
+    top: 409px;
     left:1225px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .finger{
     position: absolute;
-    top: 450px;
+    top: 495px;
     left:1237px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .knee{
     position: absolute;
-    top: 512px;
+    top: 557px;
     left:1223px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .toe{
     position: absolute;
-    top: 608px;
+    top: 653px;
     left:1216px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .eye{
     position: absolute;
-    top: 159px;
+    top: 204px;
     left:800px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .nose{
-    position: absolute;
-    top: 229px;
-    left:796px;
-    transform: translate(-50%, -50%);
-}
-.mouth{
     position: absolute;
     top: 274px;
     left:796px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
+}
+.mouth{
+    position: absolute;
+    top: 319px;
+    left:796px;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .shoulder{
     position: absolute;
-    top: 326px;
+    top: 371px;
     left:730px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .chest{
     position: absolute;
-    top: 362px;
+    top: 407px;
     left:805px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .hand{
     position: absolute;
-    top: 418px;
+    top: 463px;
     left:764px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .stomach{
     position: absolute;
-    top: 496px;
+    top: 541px;
     left:793px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .leg{
     position: absolute;
-    top: 538px;
+    top: 583px;
     left:793px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 .foot{
     position: absolute;
-    top: 588px;
+    top: 633px;
     left:776px;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
