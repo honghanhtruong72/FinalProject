@@ -141,9 +141,9 @@
                 <%--MAIN--%>
 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="playSong">
                         <video style="width: 880px; height: 520px; margin-top: 70px" controls="">
-                            <source src="/resources/audio/FiveLittleMonKeys.mp4" type="video/mp4">
+                            <source src="/resources/video/song1.MP4" type="video/mp4">
                         </video>
                     </div>
                     <div class="col-md-4">
@@ -165,8 +165,8 @@
                                             <span class="rank-no">1</span>
                                             <%--<figure><img src="extra-images/black-img/artist1.jpg" alt=""></figure>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Crank it (Dynamiq Edit)</a></h6>
-                                                <p>Kanye West ft Post Malone</p>
+                                                <h6><a onclick="changeSong('song1')">ABC Song - ABC Alphabet Song for Children</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -177,8 +177,8 @@
                                             <%--<img src="/resources/images/body_1.jpg" style="width: 40px; height: 40px" alt="">--%>
                                             <%--</div>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Startboy</a></h6>
-                                                <p>Kanye West ft </p>
+                                                <h6><a  onclick="changeSong('song2')">Colors Song</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -187,8 +187,8 @@
                                             <span class="rank-no">3</span>
                                             <%--<figure><img src="extra-images/black-img/artist3.jpg" alt=""></figure>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Bitch, Don’t Kill My Remix</a></h6>
-                                                <p>Kanye West ft Post Malone</p>
+                                                <h6><a onclick="changeSong('song3')">Counting 1-10 Song - Number Songs for Children</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -197,8 +197,8 @@
                                             <span class="rank-no">4</span>
                                             <%--<figure><img src="extra-images/black-img/artist4.jpg" alt=""></figure>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Startboy (Bpm Superme)</a></h6>
-                                                <p>Kanye West ft Post Malone</p>
+                                                <h6><a onclick="changeSong('song4')">Finger Family Song</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -207,8 +207,8 @@
                                             <span class="rank-no">5</span>
                                             <%--<figure><img src="extra-images/black-img/artist5.jpg" alt=""></figure>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Crank it (Dynamiq Edit)</a></h6>
-                                                <p>Kanye West ft Post Malone</p>
+                                                <h6><a onclick="changeSong('song5')">Head Shoulders Knees and Toes</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -217,8 +217,26 @@
                                             <span class="rank-no">6</span>
                                             <%--<figure><img src="extra-images/black-img/artist6.jpg" alt=""></figure>--%>
                                             <div class="text-overflow">
-                                                <h6><a href="#">Bitch, Don’t Kill My Remix</a></h6>
-                                                <p>Kanye West ft Post Malone</p>
+                                                <h6><a onclick="changeSong('song6')">Number song 1-20 for children - Counting numbers</a></h6>
+                                                <p>Copy by https://www.youtube.com/watch?v=D0Ajq682yrA</p>
+                                            </div>
+                                        </div>
+                                        <!--Artist Rank End-->
+                                        <!--Artist Rank End-->
+                                        <div class="artists-rank">
+                                            <span class="rank-no">7</span>
+                                            <%--<figure><img src="extra-images/black-img/artist6.jpg" alt=""></figure>--%>
+                                            <div class="text-overflow">
+                                                <h6><a onclick="changeSong('song7')">Phonics Song</a></h6>
+                                                <p>Coming soon</p>
+                                            </div>
+                                        </div>
+                                        <div class="artists-rank">
+                                            <span class="rank-no">8</span>
+                                            <%--<figure><img src="extra-images/black-img/artist6.jpg" alt=""></figure>--%>
+                                            <div class="text-overflow">
+                                                <h6><a onclick="changeSong('song8')">The Animal Sounds Song</a></h6>
+                                                <p>Copy by</p>
                                             </div>
                                         </div>
                                         <!--Artist Rank End-->
@@ -307,5 +325,16 @@
 </div>
 <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="/resources/script/CheckSession.js"></script>
+<script>
+    function changeSong(songName) {
+        var path = "/resources/video/" + songName.toString() + ".MP4";
+        var data = "<div class=\"col-md-8\" id=\"playSong\">\n" +
+            "                        <video style=\"width: 880px; height: 520px; margin-top: 70px\" controls=\"\">\n" +
+            "                            <source src=" + path + " type=\"video/mp4\">\n" +
+            "                        </video>\n" +
+            "                    </div>";
+        $('#playSong').replaceWith(data)
+    }
+</script>
 </body>
 </html>

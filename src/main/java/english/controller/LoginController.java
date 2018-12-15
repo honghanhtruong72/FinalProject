@@ -37,15 +37,16 @@ public class LoginController {
         UserEntity user = userRepository.findByUserName(userName);
         //check user name
         if (user == null) {
-            return "WrongUsername";
+            user = userRepository.findByEmail(userName);
+            if (user == null) {
+                return "WrongUsername";
+            }
         }
         //check password
-        else {
-            String keyHash = user.getKeyHash();
-            String hashedPass = Pbkdf2Encryptor.createHash(password, keyHash, 1000);
-            if (!user.getHashedPass().equals(hashedPass)) {
-                return "WrongPassword";
-            }
+        String keyHash = user.getKeyHash();
+        String hashedPass = Pbkdf2Encryptor.createHash(password, keyHash, 1000);
+        if (!user.getHashedPass().equals(hashedPass)) {
+            return "WrongPassword";
         }
         String data;
         //check role admin or user

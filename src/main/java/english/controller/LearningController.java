@@ -81,15 +81,6 @@ public class LearningController {
         return data;
     }
 
-    @RequestMapping(value = "learningsong")
-    public String showSongById(Model model,
-                                HttpServletRequest request,
-                                @RequestParam(name = "songId") int topicId) {
-        HttpSession session = request.getSession();
-        UserEntity userEntity = (UserEntity) session.getAttribute("user");
-        return "learningsong";
-    }
-
     @RequestMapping(value = "example")
     public String showExample(Model model,
                               HttpServletRequest request,
