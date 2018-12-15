@@ -1,6 +1,7 @@
 package english.controller;
 
 import english.entity.UserEntity;
+import english.helper.Pbkdf2Encryptor;
 import english.repository.RoleRepository;
 import english.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,10 +40,14 @@ public class LoginController {
             return "WrongUsername";
         }
         //check password
-        else if (!user.getPassword().equals(password)) {
-            return "WrongPassword";
+        else {
+            String keyHash = user.getKeyHash();
+            String hashedPass = Pbkdf2Encryptor.createHash(password, keyHash, 1000);
+            if (!user.getHashedPass().equals(hashedPass)) {
+                return "WrongPassword";
+            }
         }
-        String data = "";
+        String data;
         //check role admin or user
         if(user.getRoleEntity().getId() == roleRepository.findOne(1).getId()) {
             session.setAttribute("user", user);

@@ -18,8 +18,11 @@ public class UserEntity {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name="hashedPass")
+    private String hashedPass;
+
+    @Column(name="keyHash")
+    private  String keyHash;
 
     @ManyToOne
     @JoinColumn(name="roleId")
@@ -60,19 +63,27 @@ public class UserEntity {
         this.phone = phone;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public RoleEntity getRoleEntity() {
         return roleEntity;
     }
 
     public void setRoleEntity(RoleEntity roleEntity) {
         this.roleEntity = roleEntity;
+    }
+
+    public String getHashedPass() {
+        return hashedPass;
+    }
+
+    public void setHashedPass(String hashedPass) {
+        this.hashedPass = hashedPass;
+    }
+
+    public String getKeyHash() {
+        return keyHash;
+    }
+
+    public void setKeyHash(String keyHash) {
+        this.keyHash = keyHash;
     }
 }

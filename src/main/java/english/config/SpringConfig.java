@@ -23,7 +23,7 @@ public class SpringConfig {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/english"); //spring-jpa-1: database name
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("17121996");
         return  dataSource;
     }
 
