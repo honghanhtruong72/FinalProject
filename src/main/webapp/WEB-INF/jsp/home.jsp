@@ -177,7 +177,7 @@
 
 					<div class="row">
 						<div class="col-12 text-center main-event-img">
-							<img src="/resources/template/img/coming-soon.jpg" class="img-fluid">
+							<img src="/resources/template/img/coming-soon.png" class="img-fluid">
 							<!-- <p class="col-12 text-center"><button class="text-center">Coloring Party</button></p> -->
 						</div>
 

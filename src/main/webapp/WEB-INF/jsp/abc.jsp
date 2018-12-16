@@ -91,7 +91,7 @@
     </header>
 <!--END HEADER-->
     <main class="main-content">
-        <div style="height: 700px;background-color: #0d41a8;">
+        <div style="height: 700px;background-color: #104E8B;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
