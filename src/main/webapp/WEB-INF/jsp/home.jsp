@@ -44,14 +44,14 @@
 						 	<span class="mr-5 pr-2">LOGO</span>
 						 </div>
 
-						 <div class="header-top-button col-5 text-right">
+						 <div class="header-top-button col-5 text-right" id="btn-signup">
 						 	<button onclick="window.location.href = 'login'">SIGN UP</button>
 						 </div>
 					</div>
 				</div>
 			</div>
 
-			<div class="header-menu pt-3">
+			<div class="header-menu pt-3" style="background-color: transparent">
 				<div class="container">
 					<div class="row">
 						<ul class="nav col-12 justify-content-center">
@@ -258,4 +258,6 @@
 		</footer>
 	</div>
 </body>
+<script src="/resources/script/CheckSession.js"></script>
+<script src="/resources/script/login.js"></script>
 </html>

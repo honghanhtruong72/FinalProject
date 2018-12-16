@@ -24,8 +24,8 @@
 <body>
 <div class="wrapper-sub">
     <%--BEGINHEADER--%>
-    <header class="header header-sub">
-        <div class="header-top header-top-sub">
+    <header class="header header-sub" id="header">
+        <div class="header-top header-top-sub" id="header-social">
             <div class="container">
                 <div class="row pt-3">
                     <div class="header-top-left col-6 text-left">
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="header-menu header-menu-sub pt-3">
+        <div class="header-menu header-menu-sub pt-3" id="myheader">
             <div class="container">
                 <div class="row">
                     <ul class="nav col-12 justify-content-center">
@@ -325,6 +325,7 @@
 </div>
 <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="/resources/script/CheckSession.js"></script>
+<script src="/resources/template/js/main.js"></script>
 <script>
     function changeSong(songName) {
         var path = "/resources/video/" + songName.toString() + ".MP4";

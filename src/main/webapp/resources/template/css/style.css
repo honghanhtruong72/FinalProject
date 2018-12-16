@@ -26,11 +26,21 @@ a {
 	height: auto;
 	z-index: 0;
 }
+.header-menu {
+	background-color: white;
+	height: 80px;
+	position: relative;
+	width: 60%;
+	left: 21.67%;
+	z-index: 1;
+}
 .header-top,
-.header-menu,
 .header-title {
 	position: relative;
 	z-index: 1;
+}
+.header-menu-main {
+	background-color: none;
 }
 .header-top-sub {
 	background-color: #000;
@@ -41,7 +51,7 @@ a {
 	height: 670.66px;
 }
 .header-sub {
-	height: 150px;
+	height: 200px;
 }
 .main-about {
 	background-image: url("../img/4.jpg");
@@ -257,7 +267,7 @@ a {
 	font-family: 'Righteous', sans-serif;
 }
 .main-content {
-	margin-top: 50px;
+	margin-top: -20px;
 }
 .footer-sub {
 	margin-top: -20px;
@@ -293,4 +303,14 @@ a {
 	padding-bottom: 20px;
 	width: 100vw;
 	min-width: 1366px;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0%;
+	height: 80px;
+}
+#login_user{
+	padding: 15px;
 }

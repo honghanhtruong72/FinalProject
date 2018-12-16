@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div class="header-menu header-menu-sub pt-3">
+        <div class="header-menu header-menu-sub pt-3" id="myheader">
             <div class="container">
                 <div class="row">
                     <ul class="nav col-12 justify-content-center">
@@ -290,6 +290,7 @@
         window.location.replace("http://localhost:8080/learning?categoryId=2");
     }
 </script>
+<script src="/resources/template/js/main.js"></script>
 
 </body>
 </html>

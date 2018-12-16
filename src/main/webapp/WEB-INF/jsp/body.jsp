@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="header-menu header-menu-sub pt-3">
+        <div class="header-menu header-menu-sub pt-3" id="myheader">
             <div class="container">
                 <div class="row">
                     <ul class="nav col-12 justify-content-center">
@@ -254,5 +254,7 @@
 
 <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="/resources/script/CheckSession.js"></script>
+<script src="/resources/template/js/main.js"></script>
+
 </body>
 </html>

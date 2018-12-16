@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/template/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/resources/template/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/resources/template/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/account.css">
 </head>
 <body>
 <!--BEGIN HEADER-->
@@ -50,7 +50,7 @@
                         <span class="mr-5 pr-2">LOGO</span>
                     </div>
 
-                    <div class="header-top-button col-5 text-right">
+                    <div class="header-top-button col-5 text-right" id="btn-signup">
                         <button onclick="window.location.href = 'login'">SIGN UP</button>
                     </div>
                 </div>
@@ -81,8 +81,8 @@
                             <a href="learning?categoryId=3" class="nav-link">GAME</a>
                         </li>
 
-                        <li class="nav-item header-menu-home" id="btn_contact">
-                            <a href="contact" class="nav-link"  style="color: #fff;">CONTACT</a>
+                        <li class="nav-item" id="btn_contact">
+                            <a href="contact" class="nav-link">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -91,44 +91,63 @@
     </header>
     <!--END HEADER-->
     <main class="main-content">
-        <div style="height: 800px;background-color: #0d41a8;">
+        <div style="height: 900px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 style="font-size: 100px;">CONTACT</h1>
+                        <h1 style="font-size: 50px;"></h1>
                     </div>
                 </div>
             </div>
             <div class="wrap container">
-                <div class="row">
-                    <div class="col-md-6 p-b-30">
-                        <div class="p-r-20 p-r-0-lg">
-                            <%--<div class="contact-map size21" id="google_map" data-map-x="16.089344" data-map-y="108.218952" data-pin="/resources/images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"></div>--%>
-                            <div class="contact-map size21" >
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4559.227852349865!2d108.14823909751185!3d16.073875693609192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218d68e8ccb03%3A0x64dc2cb3e38bbdaf!2zNTQgTmd1eeG7hW4gTMawxqFuZyBC4bqxbmcsIEhvw6AgS2jDoW5oIELhuq9jLCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1542814754120" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a class="active" id="register-form-link" style="color: #0c5460">Manage Account</a>
                             </div>
                         </div>
+                        <hr>
                     </div>
-
-                    <div class="col-md-6 p-b-30">
-                        <form class="leave-comment"  action="message" method="post">
-                            <h4 class="m-text26 p-b-36 p-t-15">
-                                Send us your message
-                            </h4>
-                            <span style="color: #fffefa;font-size: medium">${notify}</span><br>
-
-                            <div class="bo4 of-hidden size15 m-b-20">
-                                <input class="sizefull s-text7 p-l-22 p-r-22"  type="email" name="email" value="${user.email}" placeholder="Email Address" required>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form id="password-form"  action="password" method="post"  style="display: block;" >
+                                    <span style="color: #138496;font-size: medium;margin-left: 9em">${message}</span><br>
+                                    <span style="color: red;font-size: medium;margin-left: 10em">${errorMessage}</span>
+                                    <div class="form-group">
+                                        <lable><strong>Email: </strong><span style="color: red;">*</span></lable>
+                                        <input type="email" name="email" class="form-control" value="${user.email}" readonly/>
+                                    </div>
+                                    <div class="form-group">
+                                        <lable><strong>User Name: </strong><span style="color: red;">*</span></lable>
+                                        <input name="userName" class="form-control" value="${user.userName}" readonly/>
+                                    </div>
+                                    <div class="form-group">
+                                        <lable><strong>Phone number: </strong><span style="color: red;">*</span></lable>
+                                        <input name="phone" class="form-control" value="${user.phone}" readonly/>
+                                    </div>
+                                    <lable><strong>Current Password: </strong><span style="color: red;">*</span></lable>
+                                    <input type="password" name="currentPassword" class="form-control" minlength="8" maxlength="25" required="required"/>
+                                    <div class="form-group">
+                                        <lable><strong>New Password: </strong><span style="color: red;">*</span></lable>
+                                        <input type="password" name="newPassword" class="form-control" minlength="8" maxlength="25" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <lable><strong>Confirm Password: </strong><span style="color: red;">*</span></lable>
+                                        <input type="password" name="confirmPassword" class="form-control" minlength="8" maxlength="25" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="register-submit"
+                                                       tabindex="4" class="form-control btn btn-register" value="Submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" id="content" name="content" placeholder="Message"></textarea>
-
-                            <div class="w-size25">
-                                <!-- Button -->
-                                <button type="submit" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,6 +220,5 @@
 <script src="/resources/Vendor/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="/resources/script/CheckSession.js"></script>
 <script src="/resources/template/js/main.js"></script>
-
 </body>
 </html>
