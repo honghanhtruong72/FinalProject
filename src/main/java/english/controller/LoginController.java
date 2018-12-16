@@ -50,18 +50,10 @@ public class LoginController {
         }
         String data;
         //check role admin or user
-        if(user.getRoleEntity().getId() == roleRepository.findOne(1).getId()) {
-            session.setAttribute("user", user);
-            model.addAttribute("user", user);
-            data = userName + "|" + user.getRoleEntity().getRoleName();
-            return data;
-        }
-        else {
-            session.setAttribute("user", user);
-            model.addAttribute("user", user);
-            data = userName + "|" + user.getRoleEntity().getRoleName();
-            return data;
-        }
+        session.setAttribute("user", user);
+        model.addAttribute("user", user);
+        data = user.getUserName() + "|" + String.valueOf(user.getRoleEntity().getId()) + "|" + String.valueOf(user.getId());
+        return data;
     }
 
     @RequestMapping(value = "/checkSession",method = RequestMethod.POST)
@@ -70,7 +62,7 @@ public class LoginController {
         HttpSession session= request.getSession();
         UserEntity user= (UserEntity) session.getAttribute("user");
         if(user != null){
-            return "SessionExisted" +"|"+ user.getUserName();
+            return "SessionExisted" +"|"+ user.getUserName() + "|" + String.valueOf(user.getRoleEntity().getId()) + "|" + String.valueOf(user.getId());
         }
         else return "SessionNull";
     }
