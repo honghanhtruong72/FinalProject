@@ -51,7 +51,7 @@
                         <span class="mr-5 pr-2">LOGO</span>
                     </div>
 
-                    <div class="header-top-button col-5 text-right">
+                    <div class="header-top-button col-5 text-right" id="btn-signup">
                         <button onclick="window.location.href = 'login'">SIGN UP</button>
                     </div>
                 </div>
@@ -250,6 +250,5 @@
     }
 </script>
 <script src="/resources/script/CheckSession.js"></script>
-<script src="/resources/script/game1.js"></script>
 <script src="/resources/template/js/main.js"></script>
 </html>

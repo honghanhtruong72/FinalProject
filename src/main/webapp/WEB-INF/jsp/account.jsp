@@ -91,7 +91,7 @@
     </header>
     <!--END HEADER-->
     <main class="main-content">
-        <div style="height: 900px;background-color: #0d41a8;">
+        <div style="height: 800px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -103,8 +103,8 @@
                 <div class="panel panel-login">
                     <div class="panel-heading">
                         <div class="row">
-                            <div class="col-xs-12">
-                                <a class="active" id="register-form-link" style="color: #0c5460">Manage Account</a>
+                            <div style="width: 100%">
+                                <a class="active" id="register-form-link" style="color: #0c5460">MANAGE ACOUNT</a>
                             </div>
                         </div>
                         <hr>
@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-sm-6 col-sm-offset-3">
+                                            <div style="width: 50%; margin-left: 25%">
                                                 <input type="submit" name="register-submit"
                                                        tabindex="4" class="form-control btn btn-register" value="Submit">
                                             </div>

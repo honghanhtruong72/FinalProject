@@ -27,11 +27,11 @@ a {
 	z-index: 0;
 }
 .header-menu {
-	background-color: white;
+	/*background-color: white;*/
 	height: 80px;
 	position: relative;
 	width: 60%;
-	left: 21.67%;
+	left: 20%;
 	z-index: 1;
 }
 .header-top,
@@ -305,6 +305,7 @@ a {
 	min-width: 1366px;
 }
 .sticky {
+	background-color: white;
 	position: fixed;
 	top: 0;
 	width: 100%;

@@ -54,7 +54,7 @@
                         <span class="mr-5 pr-2">LOGO</span>
                     </div>
 
-                    <div class="header-top-button col-5 text-right">
+                    <div class="header-top-button col-5 text-right" id="btn-signup">
                         <button onclick="window.location.href = 'login'">SIGN UP</button>
                     </div>
                 </div>
