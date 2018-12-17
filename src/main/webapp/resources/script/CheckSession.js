@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 
             if (String[0] == "SessionExisted") {
                 if (String[2] == "2") {
-                    displayAdmin(String[1]);
+                    displayAdmin(String);
                 }
                 else if (String[2] == "1") {
                     displayUser(String);

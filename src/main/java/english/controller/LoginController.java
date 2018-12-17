@@ -42,6 +42,10 @@ public class LoginController {
                 return "WrongUsername";
             }
         }
+        //check banned
+        if (user.getIsBanned()) {
+            return "AccountIsBanned";
+        }
         //check password
         String keyHash = user.getKeyHash();
         String hashedPass = Pbkdf2Encryptor.createHash(password, keyHash, 1000);

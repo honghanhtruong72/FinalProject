@@ -60,6 +60,7 @@ public class RegisterController {
         String hashedPass = Pbkdf2Encryptor.createHash(password, keyHash, 1000);
         userEntity.setKeyHash(keyHash);
         userEntity.setHashedPass(hashedPass);
+        userEntity.setIsBanned(false);
 
         RoleEntity role = roleRepository.findOne(1);
         userEntity.setRoleEntity(role);

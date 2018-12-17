@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface FollowRepository extends CrudRepository<FollowEntity, Integer> {
     FollowEntity findByEmail(String email);
-    @Query(value="SELECT u.* FROM follow u", nativeQuery = true)
-    List<FollowEntity> getUsersDESC();
+    @Query(value="SELECT f.* FROM follow f ORDER BY f.id desc limit 50", nativeQuery = true)
+    List<FollowEntity> getFollowDESC();
 }

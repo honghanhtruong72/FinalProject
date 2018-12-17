@@ -13,17 +13,19 @@ function userLogin() {
         timeout: 100000,
         success: function (data) {
             if (data == "WrongUsername") {
-                debugger;
                 alert("Your email is incorrect. Try again!")
             }
             else if (data == "WrongPassword") {
                 alert("Your password is incorrect.Try again!")
             }
+            else if (data == "AccountIsBanned") {
+                alert("Your Account is Banned")
+            }
             else {
-                location.href = "http://localhost:8080/home";
+                location.href = "http://localhost:8082/home";
                 var list = data.split("|");
                 if (list[1] == "2") {
-                    displayAdmin(list[0]);
+                    displayAdmin(list);
                 }
                 else if (list[1] == "1") {
                     displayUser(list);
@@ -55,7 +57,7 @@ function displayUser(data) {
 function displayAdmin(data) {
     var temple = "<div class=\"col-5 text-right\" id=\"btn-signup\">\n" +
         "\t\t<div class=\"dropdown\">\n" +
-        "\t\t\t<button class=\"btn btn-link dropdown-toggle\" id=\"button_user\" type=\"button\" data-toggle=\"dropdown\" aria-expanded=\"false\">\t Hello, " + data + "\n" +
+        "\t\t\t<button class=\"btn btn-link dropdown-toggle\" id=\"button_user\" type=\"button\" data-toggle=\"dropdown\" aria-expanded=\"false\">\t Hello, " + data[1] + "\n" +
         "\t\t\t\t<span class=\"caret\"></span>\n" +
         "\t\t\t</button>\n" +
         "\t\t\t<ul class=\"dropdown-menu dropdown-menu-right\" id=\"login_user\">\n" +

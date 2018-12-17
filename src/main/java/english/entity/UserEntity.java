@@ -24,6 +24,9 @@ public class UserEntity {
     @Column(name="keyHash")
     private  String keyHash;
 
+    @Column(name="isBanned")
+    private boolean isBanned;
+
     @ManyToOne
     @JoinColumn(name="roleId")
     private RoleEntity roleEntity;
@@ -85,5 +88,13 @@ public class UserEntity {
 
     public void setKeyHash(String keyHash) {
         this.keyHash = keyHash;
+    }
+
+    public boolean getIsBanned() {
+        return isBanned;
+    }
+
+    public void setIsBanned(boolean isBanned) {
+        this.isBanned = isBanned;
     }
 }

@@ -112,7 +112,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12">
-                                <form id="password-form"  action="password" method="post"  style="display: block;" >
+                                <form id="password-form"  action="change_password" method="post"  style="display: block;" >
                                     <span style="color: #138496;font-size: medium;margin-left: 9em">${message}</span><br>
                                     <span style="color: red;font-size: medium;margin-left: 10em">${errorMessage}</span>
                                     <div class="form-group">
