@@ -221,25 +221,25 @@
             '            </div>\n' +
             '            <div class="wrap-topic container">\n' +
             '            \t<div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=1">\n' +
+            '                    <a href="topic?topicId=7">\n' +
             '                        <img src="/resources/images/furniture/living.jpg" alt="Thumb" width="657" height="500" />\n' +
             '                        <div class="figcaption-topic"><div style="font-size: 60px">Living Room</div></div>\n' +
             '                    </a>\n' +
             '                </div>\n' +
             '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=2">\n' +
+            '                    <a href="topic?topicId=8">\n' +
             '                        <img src="/resources/images/furniture/kitchen.jpg" alt="Thumb" width="657" height="500" />\n' +
-            '                        <div class="figcaption-topic"><div style="font-size: 60px">Kitchen Room</div></div>\n' +
+            '                        <div class="figcaption-topic"><div style="font-size: 60px">Kitchen</div></div>\n' +
             '                    </a>\n' +
             '                </div>\n' +
             '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=6">\n' +
+            '                    <a href="topic?topicId=9">\n' +
             '                        <img src="/resources/images/furniture/bedroom.jpg" alt="Thumb" width="657" height="500" />\n' +
             '                        <div class="figcaption-topic"><div style="font-size: 60px">Bedroom</div></div>\n' +
             '                    </a>\n' +
             '                </div>\n' +
             '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=6">\n' +
+            '                    <a href="topic?topicId=10">\n' +
             '                        <img src="/resources/images/furniture/bathroom.jpg" alt="Thumb" width="657" height="500" />\n' +
             '                        <div class="figcaption-topic"><div style="font-size: 60px">Bathroom</div></div>\n' +
             '                    </a>\n' +

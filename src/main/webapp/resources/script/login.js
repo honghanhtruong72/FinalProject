@@ -22,7 +22,7 @@ function userLogin() {
                 alert("Your Account is Banned")
             }
             else {
-                location.href = "http://localhost:8082/home";
+                location.href = "http://localhost:8080/home";
                 var list = data.split("|");
                 if (list[1] == "2") {
                     displayAdmin(list);

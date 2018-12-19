@@ -74,6 +74,18 @@ public class LearningController {
             case TopicConst.TOPIC_BODY:
                 data = "body";
                 break;
+            case TopicConst.FURNITURE_LIVING:
+                data = "furniture_living";
+                break;
+            case TopicConst.FURNITURE_KITCHEN:
+                data = "furniture_kitchen";
+                break;
+            case TopicConst.FURNITURE_BEDROOM:
+                data = "furniture_bedroom";
+                break;
+            case TopicConst.FURNITURE_BATHROOM:
+                data = "furniture_bathroom";
+                break;
             default:
                 break;
         }
@@ -90,6 +102,8 @@ public class LearningController {
                 return "example_animal";
             case TopicConst.TOPIC_COLOR:
                 return "example_color";
+            case TopicConst.FURNITURE_LIVING:
+                return "example_living";
             default:
                 return "404";
         }
