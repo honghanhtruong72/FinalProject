@@ -108,28 +108,28 @@
             </div>
             <div class="wrap container">
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="table" src="/resources/images/furniture/shower.jpg" alt="shower" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="telephone" src="/resources/images/furniture/sink.jpg" alt="sink" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="armchair" src="/resources/images/furniture/toilet.jpg" alt="toilet" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="speaker" src="/resources/images/furniture/bathtub.jpg" alt="bathtub" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="shower" src="/resources/images/furniture/shower.jpg" alt="shower" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="sink" src="/resources/images/furniture/sink.jpg" alt="sink" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="toilet" src="/resources/images/furniture/toilet.jpg" alt="toilet" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="bathtub" src="/resources/images/furniture/bathtub.jpg" alt="bathtub" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="TV" src="/resources/images/furniture/bathtowel.jpg" alt="bath towel" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Carpet" src="/resources/images/furniture/mirror.jpg" alt="mirror" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="coatrack" src="/resources/images/furniture/washingmachine.jpg" alt="washing machine" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="sofa" src="/resources/images/furniture/scale.jpg" alt="scale" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="bathtowel" src="/resources/images/furniture/bathtowel.jpg" alt="bath towel" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="mirror" src="/resources/images/furniture/mirror.jpg" alt="mirror" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="washingmachine" src="/resources/images/furniture/washingmachine.jpg" alt="washing machine" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="scale" src="/resources/images/furniture/scale.jpg" alt="scale" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="gramophone" src="/resources/images/furniture/hairdryer.jpg" alt="hairdryer" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Houseplant" src="/resources/images/furniture/shelf.jpg" alt="shelf" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="pendulum-clock" src="/resources/images/furniture/stool.jpg" alt="stool" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Tvcabinet" src="/resources/images/furniture/comb.jpg" alt="comb" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="hairdryer" src="/resources/images/furniture/hairdryer.jpg" alt="hairdryer" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="shelf" src="/resources/images/furniture/shelf.jpg" alt="shelf" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="stool" src="/resources/images/furniture/stool.jpg" alt="stool" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="comb" src="/resources/images/furniture/comb.jpg" alt="comb" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="standinglamp" src="/resources/images/furniture/toothbrush.jpg" alt="toothbrush" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="light" src="/resources/images/furniture/toothpaste.jpg" alt="toothpaste" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="door&window" src="/resources/images/furniture/soap.jpg" alt="soap" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="rockingchair" src="/resources/images/furniture/shampoo.jpg" alt="shampoo" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="toothbrush" src="/resources/images/furniture/toothbrush.jpg" alt="toothbrush" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="toothpaste" src="/resources/images/furniture/toothpaste.jpg" alt="toothpaste" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="soap" src="/resources/images/furniture/soap.jpg" alt="soap" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="shampoo" src="/resources/images/furniture/shampoo.jpg" alt="shampoo" onclick="clickImageLiving(this)">
                 </div>
                 <div class="btn_practice_furniture">
                     <a href="example?id=10"><img style="width: 250px; height: 150px" src="/resources/images/next.png" id="next-animal-1"></a>
@@ -217,10 +217,15 @@
 <script src="/resources/template/js/main.js"></script>
 <script>
     function clickImageLiving(imgId) {
+        //play audio
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + imgId.id.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         //modal
         var modal = document.getElementById('myModal');
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById(imgId.id);
         var modalImg = document.getElementById("modalId");
         var captionText = document.getElementById("caption");
         modal.style.display = "block";

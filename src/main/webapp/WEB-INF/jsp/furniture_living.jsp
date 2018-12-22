@@ -114,21 +114,21 @@
                     <img class="col-sm-3 size-test" id="speaker" src="/resources/images/furniture/speaker.jpg" alt="speaker" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="TV" src="/resources/images/furniture/TV.jpg" alt="television" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Carpet" src="/resources/images/furniture/Carpet.jpg" alt="carpet" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="coatrack" src="/resources/images/furniture/coatrack.jpg" alt="coat stand" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="television" src="/resources/images/furniture/TV.jpg" alt="television" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="carpet" src="/resources/images/furniture/Carpet.jpg" alt="carpet" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="coatstand" src="/resources/images/furniture/coatrack.jpg" alt="coat stand" onclick="clickImageLiving(this)">
                     <img class="col-sm-3 size-test" id="sofa" src="/resources/images/furniture/sofa.jpg" alt="sofa" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
                     <img class="col-sm-3 size-test" id="gramophone" src="/resources/images/furniture/gramophone.jpg" alt="gramophone" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Houseplant" src="/resources/images/furniture/Houseplant.jpg" alt="houseplant" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="pendulum-clock" src="/resources/images/furniture/pendulum-clock.jpg" alt="pendulum-clock" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Tvcabinet" src="/resources/images/furniture/Tvcabinet.jpg" alt="television cabinet" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="houseplant" src="/resources/images/furniture/Houseplant.jpg" alt="houseplant" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="pendulumclock" src="/resources/images/furniture/pendulum-clock.jpg" alt="pendulum-clock" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="televisioncabinet" src="/resources/images/furniture/Tvcabinet.jpg" alt="television cabinet" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
                     <img class="col-sm-3 size-test" id="standinglamp" src="/resources/images/furniture/standinglamp.jpg" alt="Standing lamp" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="light" src="/resources/images/furniture/light.jpg" alt="overhead light" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="door&window" src="/resources/images/furniture/door&window.jpg" alt="door and window" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="overheadlight" src="/resources/images/furniture/light.jpg" alt="overhead light" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="doorandwindow" src="/resources/images/furniture/door&window.jpg" alt="door and window" onclick="clickImageLiving(this)">
                     <img class="col-sm-3 size-test" id="rockingchair" src="/resources/images/furniture/rockingchair.jpg" alt="rocking chair" onclick="clickImageLiving(this)">
                 </div>
                 <div class="btn_practice_furniture">
@@ -217,10 +217,15 @@
 <script src="/resources/template/js/main.js"></script>
 <script>
     function clickImageLiving(imgId) {
+        //play audio
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + imgId.id.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         //modal
         var modal = document.getElementById('myModal');
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById(imgId.id);
         var modalImg = document.getElementById("modalId");
         var captionText = document.getElementById("caption");
         modal.style.display = "block";

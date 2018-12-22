@@ -108,28 +108,28 @@
             </div>
             <div class="wrap container">
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="table" src="/resources/images/furniture/Alarmclock.jpg" alt="alarm clock" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="telephone" src="/resources/images/furniture/bed.jpg" alt="bed" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="armchair" src="/resources/images/furniture/book.jpg" alt="book" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="speaker" src="/resources/images/furniture/chair.jpg" alt="chair" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="alarmclock" src="/resources/images/furniture/Alarmclock.jpg" alt="alarm clock" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="bed" src="/resources/images/furniture/bed.jpg" alt="bed" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="book" src="/resources/images/furniture/book.jpg" alt="book" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="chair" src="/resources/images/furniture/chair.jpg" alt="chair" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="TV" src="/resources/images/furniture/swivelchair.jpg" alt="swivel chair" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Carpet" src="/resources/images/furniture/desk.jpg" alt="desk" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="coatrack" src="/resources/images/furniture/lamp.jpg" alt="lamp" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="sofa" src="/resources/images/furniture/chestofdrawers.jpg" alt="chest of drawers" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="swivelchair" src="/resources/images/furniture/swivelchair.jpg" alt="swivel chair" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="desk" src="/resources/images/furniture/desk.jpg" alt="desk" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="lamp" src="/resources/images/furniture/lamp.jpg" alt="lamp" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="chestofdrawers" src="/resources/images/furniture/chestofdrawers.jpg" alt="chest of drawers" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="gramophone" src="/resources/images/furniture/Wardrobe.jpg" alt="wardrobe" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Houseplant" src="/resources/images/furniture/chair.jpg" alt="chair" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="pendulum-clock" src="/resources/images/furniture/bookshelf.jpg" alt="bookshelf" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="Tvcabinet" src="/resources/images/furniture/vase.jpg" alt="vase" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="wardrobe" src="/resources/images/furniture/Wardrobe.jpg" alt="wardrobe" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="chair1" src="/resources/images/furniture/chair.jpg" alt="chair" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="bookshelf" src="/resources/images/furniture/bookshelf.jpg" alt="bookshelf" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="vase" src="/resources/images/furniture/vase.jpg" alt="vase" onclick="clickImageLiving(this)">
                 </div>
                 <div class="row">
-                    <img class="col-sm-3 size-test" id="standinglamp" src="/resources/images/furniture/computer.jpg" alt="computer" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="light" src="/resources/images/furniture/picture.jpg" alt="picture" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="door&window" src="/resources/images/furniture/fan.jpg" alt="fan" onclick="clickImageLiving(this)">
-                    <img class="col-sm-3 size-test" id="rockingchair" src="/resources/images/furniture/pillow.jpg" alt="pillow" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="computer" src="/resources/images/furniture/computer.jpg" alt="computer" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="picture" src="/resources/images/furniture/picture.jpg" alt="picture" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="fan" src="/resources/images/furniture/fan.jpg" alt="fan" onclick="clickImageLiving(this)">
+                    <img class="col-sm-3 size-test" id="pillow" src="/resources/images/furniture/pillow.jpg" alt="pillow" onclick="clickImageLiving(this)">
                 </div>
                 <div class="btn_practice_furniture">
                     <a href="example?id=9"><img style="width: 250px; height: 150px" src="/resources/images/next.png" id="next-animal-1"></a>
@@ -217,6 +217,12 @@
 <script src="/resources/template/js/main.js"></script>
 <script>
     function clickImageLiving(imgId) {
+        //play audio
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + imgId.id.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         //modal
         var modal = document.getElementById('myModal');
         // Get the image and insert it inside the modal - use its "alt" text as a caption

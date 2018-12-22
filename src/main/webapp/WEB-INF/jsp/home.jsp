@@ -7,7 +7,7 @@
 	<title>Home English For Kids</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="icon" type="image/png" href="/resources/Vendor/login/images/icons/favicon.ico"/>
 	<link rel="stylesheet" href="/resources/template/css/bootstrap.min.css">
 	<script src="/resources/template/js/jquery.min.js"></script>
 	<script src="/resources/template/js/popper.min.js"></script>
