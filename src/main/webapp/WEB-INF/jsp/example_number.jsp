@@ -118,19 +118,19 @@
                         <div class="col-md-4 text-center">
                             <button id="1" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">One
+                                    onclick="checkClick(this, false, 0, 'one')">One
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="2" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">Zero
+                                    onclick="checkClick(this, false, 0, 'zero')">Zero
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="3" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, true, 0)">Five
+                                    onclick="checkClick(this, true, 0, 'five')">Five
                             </button>
                         </div>
                     </div>
@@ -218,17 +218,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 1)\">Three\n" +
+        "                    onclick=\"checkClick(this, true, 1, 'three')\">Three\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 1)\">Five\n" +
+        "                    onclick=\"checkClick(this, false, 1, 'five')\">Five\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 1)\">Nine\n" +
+        "                    onclick=\"checkClick(this, false, 1, 'nine')\">Nine\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div> </div>",
@@ -238,17 +238,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 2)\">Seven\n" +
+        "                    onclick=\"checkClick(this, false, 2, 'seven')\">Seven\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 2)\">Six\n" +
+        "                    onclick=\"checkClick(this, true, 2, 'six')\">Six\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 2)\">Two\n" +
+        "                    onclick=\"checkClick(this, false, 2, 'two')\">Two\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div> </div>",
@@ -258,17 +258,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 3)\">Four\n" +
+        "                    onclick=\"checkClick(this, false, 3, 'four')\">Four\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 3)\">One\n" +
+        "                    onclick=\"checkClick(this, false, 3, 'one')\">One\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 3)\">Nine\n" +
+        "                    onclick=\"checkClick(this, true, 3, 'nine')\">Nine\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div></div>",
@@ -278,12 +278,12 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 4)\">Ten\n" +
+        "                    onclick=\"checkClick(this, false, 4, 'ten')\">Ten\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                     onclick=\"checkClick(this, true, 4)\">One\n" +
+        "                     onclick=\"checkClick(this, true, 4, 'one')\">One\n" +
         "            </button>\n" +
         "<!-- Modal -->\n" +
         "                <div class=\"modal\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\">\n" +
@@ -308,13 +308,18 @@
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 4)\">Two\n" +
+        "                    onclick=\"checkClick(this, false, 4, 'two')\">Two\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div></div>"
     ];
 
-    function checkClick(button, check, index) {
+    function checkClick(button, check, index, name) {
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + name.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         if (check == true) {
             button.style.backgroundColor = "green";
             //todo update auido
@@ -323,6 +328,11 @@
                     $("#example").replaceWith(this.listlesson[index]);
                 }
                 else {
+                    //audio chuc mung
+                    filePath = "/resources/audio/game_over.mp3";
+                    audioElement.setAttribute('src', filePath);
+                    audioElement.play();
+
                     document.getElementById('myModal').style.display='block';
                     var data = "<div class=\"modal-body\" id=\"resultExample\">You Are Excellent</div>";
                     $("#resultExample").replaceWith(data);

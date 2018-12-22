@@ -328,6 +328,12 @@
     this.listResult = ['Clock','Desk','Lamp','Book','Vase'];
 
     function check() {
+        //audio chuc mung
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/game_over.mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         document.getElementById('myModal').style.display = 'block';
         var listCheck = [];
         var select1 = document.getElementById('select1');
@@ -354,6 +360,7 @@
                 count++;
             }
         }
+
         var data = "<div class=\"modal-body\" id=\"resultExample\"> You have complete " + count.toString() + "/" + numberExam.toString() + "</div>";
         $("#resultExample").replaceWith(data);
     }

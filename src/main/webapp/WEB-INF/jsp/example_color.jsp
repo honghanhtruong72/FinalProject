@@ -333,6 +333,12 @@
     this.listResult = ['Black', 'Blue','Purple','Pink','Yellow'];
 
     function check() {
+        //audio chuc mung
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/game_over.mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
+
         document.getElementById('myModal').style.display = 'block';
         var listCheck = [];
         var select1 = document.getElementById('select1');

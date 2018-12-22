@@ -118,19 +118,19 @@
                         <div class="col-md-4 text-center">
                             <button id="1" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">Soap
+                                    onclick="checkClick(this, false, 0, 'soap')">Soap
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="2" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, true, 0)">Mirror
+                                    onclick="checkClick(this, true, 0, 'mirror')">Mirror
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="3" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">Scale
+                                    onclick="checkClick(this, false, 0, 'scale')">Scale
                             </button>
                         </div>
                     </div>
@@ -218,17 +218,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 1)\">Stool\n" +
+        "                    onclick=\"checkClick(this, false, 1, 'stool')\">Stool\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 1)\">comb\n" +
+        "                    onclick=\"checkClick(this, true, 1, 'comb')\">Comb\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 1)\">sink\n" +
+        "                    onclick=\"checkClick(this, false, 1, 'sink')\">Sink\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div> </div>",
@@ -238,17 +238,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 270px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 2)\">Bath towel\n" +
+        "                    onclick=\"checkClick(this, true, 2, 'bathtowel')\">Bath towel\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 250px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 2)\">Toilet\n" +
+        "                    onclick=\"checkClick(this, false, 2, 'toilet')\">Toilet\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 220px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 2)\">Shampoo\n" +
+        "                    onclick=\"checkClick(this, false, 2, 'shampoo')\">Shampoo\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div> </div>",
@@ -258,17 +258,17 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 270px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 3)\">Toothpaste\n" +
+        "                    onclick=\"checkClick(this, false, 3, 'toothpaste')\">Toothpaste\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 300px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 3)\">hairdryer\n" +
+        "                    onclick=\"checkClick(this, false, 3, 'hairdryer')\">Hairdryer\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 3)\">Bathtub\n" +
+        "                    onclick=\"checkClick(this, true, 3, 'bathtub')\">Bathtub\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div></div>",
@@ -278,12 +278,12 @@
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, false, 4)\">Shelf\n" +
+        "                    onclick=\"checkClick(this, false, 4, 'shelf')\">Shelf\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 270px; height: 100px; font-size: 50px\"\n" +
-        "                     onclick=\"checkClick(this, false, 4)\">Shower\n" +
+        "                     onclick=\"checkClick(this, false, 4, 'shower')\">Shower\n" +
         "            </button>\n" +
         "<!-- Modal -->\n" +
         "                <div class=\"modal\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\">\n" +
@@ -308,13 +308,17 @@
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
         "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
-        "                    onclick=\"checkClick(this, true, 4)\">Soap\n" +
+        "                    onclick=\"checkClick(this, true, 4, 'soap')\">Soap\n" +
         "            </button>\n" +
         "        </div>\n" +
         "    </div></div>"
     ];
 
-    function checkClick(button, check, index) {
+    function checkClick(button, check, index, name) {
+        var audioElement = document.createElement('audio');
+        var filePath = "/resources/audio/" + name.toString() + ".mp3";
+        audioElement.setAttribute('src', filePath);
+        audioElement.play();
         if (check == true) {
             button.style.backgroundColor = "green";
             //todo update auido
@@ -323,6 +327,11 @@
                     $("#example").replaceWith(this.listlesson[index]);
                 }
                 else {
+                    //audio chuc mung
+                    filePath = "/resources/audio/game_over.mp3";
+                    audioElement.setAttribute('src', filePath);
+                    audioElement.play();
+
                     document.getElementById('myModal').style.display='block';
                     var data = "<div class=\"modal-body\" id=\"resultExample\">You Are Excellent</div>";
                     $("#resultExample").replaceWith(data);
