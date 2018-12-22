@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></span>
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -112,25 +112,25 @@
             </div>
             <div class="wrap-size container">
                 <div class="container" id="example">
-                    <div class="text-center" id="image"><img src="/resources/images/animal/ngua.png" style="width: 250px; height: 250px"></div>
+                    <div class="text-center" id="image"><img src="/resources/images/furniture/windown.png" style="width: 250px; height: 250px"></div>
                     <div class="row" style="height: 100px"></div>
                     <div class="row">
                         <div class="col-md-4 text-center">
                             <button id="1" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, true, 0)">Horse
+                                    onclick="checkClick(this, false, 0)">Sofa
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="2" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">Dog
+                                    onclick="checkClick(this, true, 0)">Window
                             </button>
                         </div>
                         <div class="col-md-4 text-center">
                             <button id="3" type="button" class="btn btn-default"
                                     style="width: 200px; height: 100px; font-size: 50px"
-                                    onclick="checkClick(this, false, 0)">Pig
+                                    onclick="checkClick(this, false, 0)">Book
                             </button>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <p>LOGO</p>
+                        <p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
                         <span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks"
                                    target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
@@ -217,7 +217,7 @@
         "    <div class=\"row\" style=\"height: 100px\"></div>\n" +
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 250px; height: 100px; font-size: 50px\"\n" +
         "                    onclick=\"checkClick(this, true, 1)\">coat stand\n" +
         "            </button>\n" +
         "        </div>\n" +
@@ -237,17 +237,17 @@
         "    <div class=\"row\" style=\"height: 100px\"></div>\n" +
         "    <div class=\"row\">\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"1\" type=\"button\" class=\"btn btn-default\" style=\"width: 250px; height: 100px; font-size: 50px\"\n" +
         "                    onclick=\"checkClick(this, true, 2)\">television\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 250px; height: 100px; font-size: 50px\"\n" +
         "                    onclick=\"checkClick(this, false, 2)\">telephone\n" +
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"3\" type=\"button\" class=\"btn btn-default\" style=\"width: 220px; height: 100px; font-size: 50px\"\n" +
         "                    onclick=\"checkClick(this, false, 2)\">armchair\n" +
         "            </button>\n" +
         "        </div>\n" +
@@ -262,7 +262,7 @@
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 300px; height: 100px; font-size: 50px\"\n" +
         "                    onclick=\"checkClick(this, false, 3)\">gramophone\n" +
         "            </button>\n" +
         "        </div>\n" +
@@ -282,7 +282,7 @@
         "            </button>\n" +
         "        </div>\n" +
         "        <div class=\"col-md-4 text-center\">\n" +
-        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 200px; height: 100px; font-size: 50px\"\n" +
+        "            <button id=\"2\" type=\"button\" class=\"btn btn-default\" style=\"width: 270px; height: 100px; font-size: 50px\"\n" +
         "                     onclick=\"checkClick(this, true, 4)\">houseplant\n" +
         "            </button>\n" +
         "<!-- Modal -->\n" +
@@ -338,7 +338,7 @@
         location.reload();
     }
     function back() {
-        window.location.replace("http://localhost:8080/learning?categoryId=2");
+        window.location.replace("http://localhost:8080/topic?topicId=5");
     }
 </script>
 <script src="/resources/template/js/main.js"></script>

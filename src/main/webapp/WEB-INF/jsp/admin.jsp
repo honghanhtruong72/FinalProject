@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></span>
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">

@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></span>
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -176,7 +176,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <p>LOGO</p>
+                        <p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
                         <span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
 								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>

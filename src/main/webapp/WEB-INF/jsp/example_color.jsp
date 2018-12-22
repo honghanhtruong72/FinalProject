@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></span>
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -101,30 +101,53 @@
     </header>
     <%--ENDHEADER--%>
     <main class="main-content">
-        <div style="height: 900px;background-color: #0d41a8;">
+        <div style="height: 1800px;background-color: #0d41a8;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 style="font-size: 50px;">Please submit the correct answer!!!</h1>
+                        <h1 style="font-size: 50px; color: #fe5f97">Please submit the correct answers!!!</h1>
                     </div>
                 </div>
             </div>
             <div class="wrap-size container">
-                <form id="1">
+                <form>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-right" id="image1"><img src="/resources/images/color/black.png"
+                            <div class="col-md-5">
+                                <div class="text-right" id="image1"><img src="/resources/images/color/4.png"
                                                                          style="width: 250px; height: 250px">
                                 </div>
                             </div>
 
-                            <div class="col-md-6" style="padding-top: 10%; left: 10%">This is
+                            <div class="col-md-7" style="padding-top: 10%; left: 10%; font-size: 30px">
+                                <div class="text-left">His hair is &nbsp;&nbsp;
                                 <select id="select1">
+                                    <option value="">Color</option>
                                     <option value="">Black</option>
                                     <option value="">Blue</option>
                                     <option value="">Green</option>
                                     <option value="">Pink</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 50px"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="text-right" id="image2"><img src="/resources/images/color/3.png"
+                                                                         style="width: 250px; height: 250px">
+                                </div>
+                            </div>
+
+                            <div class="col-md-7" style="padding-top: 10%; left: 10%;font-size: 30px">Her hair is &nbsp;&nbsp;
+                                <select id="select2">
+                                    <option value="">Color</option>
+                                    <option value="">Green</option>
+                                    <option value="">Blue</option>
+                                    <option value="">Purple</option>
+                                    <option value="">Yellow</option>
                                 </select>
                             </div>
                         </div>
@@ -132,25 +155,73 @@
                     <div class="row" style="height: 50px"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-right" id="image2"><img src="/resources/images/color/red.png"
+                            <div class="col-md-5">
+                                <div class="text-right" id="image3"><img src="/resources/images/color/2.png"
                                                                          style="width: 250px; height: 250px">
                                 </div>
                             </div>
 
-                            <div class="col-md-6" style="padding-top: 10%; left: 10%">This is
-                                <select id="select2">
-                                    <option value="">Green</option>
-                                    <option value="">Blue</option>
-                                    <option value="">Pink</option>
-                                    <option value="">Red</option>
-                                </select>
+                            <div class="col-md-7" style="padding-top: 10%; left: 10%; font-size: 30px">
+                                <div class="text-left">Her T-shirt is &nbsp;&nbsp;
+                                    <select id="select3">
+                                        <option value="">Color</option>
+                                        <option value="">Purple</option>
+                                        <option value="">White</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Green</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row" style="height: 50px"></div>
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn-secondary" style="left: 30%" onclick="check()">
+                            <div class="col-md-5">
+                                <div class="text-right" id="image4"><img src="/resources/images/color/5.png"
+                                                                         style="width: 250px; height: 250px">
+                                </div>
+                            </div>
+
+                            <div class="col-md-7" style="padding-top: 10%; left: 10%; font-size: 30px">
+                                <div class="text-left">His hair is &nbsp;&nbsp;
+                                    <select id="select4">
+                                        <option value="">Color</option>
+                                        <option value="">Blue</option>
+                                        <option value="">Pink</option>
+                                        <option value="">Black</option>
+                                        <option value="">White</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 50px"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="text-right" id="image5"><img src="/resources/images/color/6.png"
+                                                                         style="width: 250px; height: 250px">
+                                </div>
+                            </div>
+                            <div class="col-md-7" style="padding-top: 10%; left: 10%; font-size: 30px">
+                                <div class="text-left">His Polo shirt is &nbsp;&nbsp;
+                                    <select id="select5">
+                                        <option value="">Color</option>
+                                        <option value="">Green</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Yellow</option>
+                                        <option value="">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 50px"></div>
+                        <div class="row">
+                            <div class="col-md-7"></div>
+                            <div class="col-md-5" style="padding-top: 30px">
+                                <button class="button-2" type="button" onclick="check()">
                                     Submit
                                 </button>
 
@@ -212,7 +283,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <p>LOGO</p>
+                        <p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
                         <span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks"
                                    target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
@@ -259,17 +330,28 @@
 <!-- END FOOTER -->
 
 <script>
-    this.listResult = ['Black', 'Red'];
+    this.listResult = ['Black', 'Blue','Purple','Pink','Yellow'];
 
     function check() {
         document.getElementById('myModal').style.display = 'block';
         var listCheck = [];
         var select1 = document.getElementById('select1');
         var select2 = document.getElementById('select2');
+        var select3 = document.getElementById('select3');
+        var select4 = document.getElementById('select4');
+        var select5 = document.getElementById('select5');
+
         var value1 = select1.options[select1.selectedIndex].text;
         var value2 = select2.options[select2.selectedIndex].text;
+        var value3 = select3.options[select3.selectedIndex].text;
+        var value4 = select4.options[select4.selectedIndex].text;
+        var value5 = select5.options[select5.selectedIndex].text;
+
         listCheck.push(value1);
         listCheck.push(value2);
+        listCheck.push(value3);
+        listCheck.push(value4);
+        listCheck.push(value5);
         var count = 0;
         var numberExam = listCheck.length;
         for (var i = 0; i < numberExam; i++) {

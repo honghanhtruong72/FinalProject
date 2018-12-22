@@ -7,6 +7,7 @@ public class TopicConst {
     public static final int TOPIC_ANIMAL = 4;
     public static final int TOPIC_FURNITURE = 5;
     public static final int TOPIC_BODY = 6;
+
     public static final int FURNITURE_LIVING = 7;
     public static final int FURNITURE_KITCHEN = 8;
     public static final int FURNITURE_BEDROOM = 9;

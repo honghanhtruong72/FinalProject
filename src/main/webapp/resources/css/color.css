@@ -58,12 +58,4 @@
     left:1070px;
     transform: translate(-50%, -50%);
 }
-.btn_practice {
-    position: absolute;
-    top: 647px;
-    left: 1155px;
-    width: 250px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    cursor:pointer;
-}
+

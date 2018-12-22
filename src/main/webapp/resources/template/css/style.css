@@ -1,5 +1,6 @@
 * {
-	font-family: 'Righteous', sans-serif;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: bold;
 }
 a {
 	text-decoration: none;
@@ -161,7 +162,7 @@ a {
 	color: #255ea8;
 }
 .header-title-1 {
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 	color: #fe5f97;
 	font-size: 200px;
 	font-weight: 700;
@@ -175,7 +176,6 @@ a {
 	border: none;
 	outline: none;
 	background-color: transparent;
-	font-size: 11px;
 	color: #fff;
 	border-radius: 30px;
 	background-color: #32cfbc;
@@ -211,7 +211,7 @@ a {
 }
 .main-about-title p,
 .main-team-title p {
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 	color: #fff;
 	font-size: 17px;
 	line-height: 1.5;
@@ -228,7 +228,7 @@ a {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 700;
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 	cursor:pointer;
 }
 .main-event-img img {
@@ -241,7 +241,7 @@ a {
 }
 .footer-email-left p {
 	font-weight: 700;
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 	color: #fff;
 	font-size: 36px;
 	line-height: 150px;
@@ -257,14 +257,14 @@ a {
 	padding: 10px 20px;
 	color: #fff;
 	background-color: #fe5f97;
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 	font-weight: 700;
 	cursor:pointer;
 }
 .footer {
 	height: 400px;
 	color: #fff;
-	font-family: 'Righteous', sans-serif;
+	font-family: "Myriad Pro", 'Righteous', sans-serif;
 }
 .main-content {
 	margin-top: -20px;
@@ -319,5 +319,42 @@ a {
 	width: 100%;
 	height: 100%;
 	padding: 1px;
+	cursor:pointer;
+}
+.button-2 {
+	border: none;
+	outline: none;
+	font-size: 30px;
+	background-color: #fe5f97;
+	color: #fff;
+	border-radius: 20px;
+	padding: 20px 50px;
+	cursor: pointer;
+}
+.btn_practice{
+	position: absolute;
+	top: 647px;
+	left: 1155px;
+	width: 250px;
+	height: 100px;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+}
+.btn_practice_body{
+	position: absolute;
+	top: 780px;
+	left: 1155px;
+	width: 250px;
+	height: 100px;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+}
+.btn_practice_furniture{
+	position: absolute;
+	top: 950px;
+	left: 1100px;
+	width: 250px;
+	height: 100px;
+	transform: translate(-50%, -50%);
 	cursor:pointer;
 }

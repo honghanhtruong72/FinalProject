@@ -52,7 +52,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px">
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -143,7 +143,7 @@
                 <div class="row">
                     <div class="col-md-8" id="playSong">
                         <video style="width: 880px; height: 520px; margin-top: 70px" controls="">
-                            <source src="/resources/video/song1.MP4" type="video/mp4">
+                            <source src="/resources/video/counting_from_1_to_10.MP4" type="video/mp4">
                         </video>
                     </div>
                     <div class="col-md-4">
@@ -164,10 +164,12 @@
                                         <div class="artists-rank">
                                             <span class="rank-no">1</span>
                                             <%--<figure><img src="extra-images/black-img/artist1.jpg" alt=""></figure>--%>
+                                            <a onclick="changeSong('counting_from_1_to_10')">
                                             <div class="text-overflow">
-                                                <h6><a onclick="changeSong('song1')">ABC Song - ABC Alphabet Song for Children</a></h6>
-                                                <p>Copy by</p>
+                                                <h6>Counting from 1 to 10</h6>
+                                                <p><i>Copy by KidsTV123</i></p>
                                             </div>
+                                            </a>
                                         </div>
                                         <!--Artist Rank End-->
                                         <!--Artist Rank End-->
@@ -176,40 +178,48 @@
                                             <%--<div class="figure-song">--%>
                                             <%--<img src="/resources/images/body_1.jpg" style="width: 40px; height: 40px" alt="">--%>
                                             <%--</div>--%>
+                                            <a  onclick="changeSong('color_song')">
                                             <div class="text-overflow">
-                                                <h6><a  onclick="changeSong('song2')">Colors Song</a></h6>
-                                                <p>Copy by</p>
+                                                <h6>Color song</h6>
+                                                <p><i>Copy by KidsTV123</i></p>
                                             </div>
+                                            </a>
                                         </div>
                                         <!--Artist Rank End-->
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">3</span>
                                             <%--<figure><img src="extra-images/black-img/artist3.jpg" alt=""></figure>--%>
+                                            <a onclick="changeSong('Finger_family_song')">
                                             <div class="text-overflow">
-                                                <h6><a onclick="changeSong('song3')">Counting 1-10 Song - Number Songs for Children</a></h6>
-                                                <p>Copy by</p>
+                                                <h6>Finger family song</h6>
+                                                <p><i>Copy by EFlash</i></p>
                                             </div>
+                                            </a>
                                         </div>
                                         <!--Artist Rank End-->
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">4</span>
                                             <%--<figure><img src="extra-images/black-img/artist4.jpg" alt=""></figure>--%>
+                                            <a onclick="changeSong('Head_shoulder_knee_and_toes')">
                                             <div class="text-overflow">
-                                                <h6><a onclick="changeSong('song4')">Finger Family Song</a></h6>
-                                                <p>Copy by</p>
+                                                <h6>Head shoulder knee and toes</h6>
+                                                <p><i>Copy by KidsTV123</i></p>
                                             </div>
+                                            </a>
                                         </div>
                                         <!--Artist Rank End-->
                                         <!--Artist Rank End-->
                                         <div class="artists-rank">
                                             <span class="rank-no">5</span>
                                             <%--<figure><img src="extra-images/black-img/artist5.jpg" alt=""></figure>--%>
+                                            <a onclick="changeSong('The_animal_sound_song')">
                                             <div class="text-overflow">
-                                                <h6><a onclick="changeSong('song5')">Head Shoulders Knees and Toes</a></h6>
-                                                <p>Copy by</p>
+                                                <h6>The animal sound song</h6>
+                                                <p><i>Copy by KidsTV123</i></p>
                                             </div>
+                                            </a>
                                         </div>
                                         <!--Artist Rank End-->
                                         <!--Artist Rank End-->
@@ -279,7 +289,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <p>LOGO</p>
+                        <p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
                         <span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks"
                                    target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>

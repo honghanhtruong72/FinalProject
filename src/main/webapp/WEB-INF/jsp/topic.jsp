@@ -48,7 +48,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-7 text-right">
-                        <span class="mr-5 pr-2">LOGO</span>
+                        <span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></span>
                     </div>
 
                     <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -133,7 +133,7 @@
                     </a>
                 </div>
                 <div class="figure-topic">
-                    <a onclick="replaceFunc()" style="cursor:pointer;">
+                    <a href="topic?topicId=5" style="cursor:pointer;">
                         <img src="/resources/images/furniture_1.jpg" id="topic-furniture" alt="Thumb" width="657" height="500" />
                         <div class="figcaption-topic"><div style="font-size: 60px">Furniture</div></div>
                     </a>
@@ -166,7 +166,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <p>LOGO</p>
+                        <p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
                         <span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
 								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
@@ -207,48 +207,6 @@
     </footer>
 </div>
 </body>
-<script>
-    function replaceFunc() {
-        location.href = "#top";
-        $('#main-topic').replaceWith('<main class="main-content" id="main-topic">\n' +
-            '        <div style="height: 1300px;background-color: #0d41a8;">\n' +
-            '            <div class="container">\n' +
-            '                <div class="row">\n' +
-            '                    <div class="col-12" style="top: 68px">\n' +
-            '                        <h1 style="font-size: 100px;">Topic Furniture</h1>\n' +
-            '                    </div>\n' +
-            '                </div>\n' +
-            '            </div>\n' +
-            '            <div class="wrap-topic container">\n' +
-            '            \t<div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=7">\n' +
-            '                        <img src="/resources/images/furniture/living.jpg" alt="Thumb" width="657" height="500" />\n' +
-            '                        <div class="figcaption-topic"><div style="font-size: 60px">Living Room</div></div>\n' +
-            '                    </a>\n' +
-            '                </div>\n' +
-            '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=8">\n' +
-            '                        <img src="/resources/images/furniture/kitchen.jpg" alt="Thumb" width="657" height="500" />\n' +
-            '                        <div class="figcaption-topic"><div style="font-size: 60px">Kitchen</div></div>\n' +
-            '                    </a>\n' +
-            '                </div>\n' +
-            '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=9">\n' +
-            '                        <img src="/resources/images/furniture/bedroom.jpg" alt="Thumb" width="657" height="500" />\n' +
-            '                        <div class="figcaption-topic"><div style="font-size: 60px">Bedroom</div></div>\n' +
-            '                    </a>\n' +
-            '                </div>\n' +
-            '                <div class="figure-topic">\n' +
-            '                    <a href="topic?topicId=10">\n' +
-            '                        <img src="/resources/images/furniture/bathroom.jpg" alt="Thumb" width="657" height="500" />\n' +
-            '                        <div class="figcaption-topic"><div style="font-size: 60px">Bathroom</div></div>\n' +
-            '                    </a>\n' +
-            '                </div>\n' +
-            '            </div>\n' +
-            '        </div>\n' +
-            '    </main>');
-    }
-</script>
 <script src="/resources/script/CheckSession.js"></script>
 <script src="/resources/template/js/main.js"></script>
 </html>

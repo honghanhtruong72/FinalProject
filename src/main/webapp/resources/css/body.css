@@ -13,14 +13,14 @@
 }
 .ear{
     position: absolute;
-    top: 257px;
+    top: 259px;
     left:1220px;
     transform: translate(-50%, -50%);
     cursor:pointer;
 }
 .tooth{
     position: absolute;
-    top: 319px;
+    top: 320px;
     left:1212px;
     transform: translate(-50%, -50%);
     cursor:pointer;
@@ -55,14 +55,14 @@
 }
 .toe{
     position: absolute;
-    top: 653px;
+    top: 654px;
     left:1216px;
     transform: translate(-50%, -50%);
     cursor:pointer;
 }
 .eye{
     position: absolute;
-    top: 204px;
+    top: 205px;
     left:800px;
     transform: translate(-50%, -50%);
     cursor:pointer;
@@ -90,7 +90,7 @@
 }
 .chest{
     position: absolute;
-    top: 407px;
+    top: 409px;
     left:805px;
     transform: translate(-50%, -50%);
     cursor:pointer;

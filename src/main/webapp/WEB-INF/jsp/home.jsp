@@ -41,7 +41,7 @@
 
 					<div class="row pt-3">
 						 <div class="col-7 text-right">
-						 	<span class="mr-5 pr-2"><img src="/resources/template/img/logo.png"></img></span>
+						 	<span class="mr-10 pr-2"><img src="/resources/template/img/logo.png" style = "width: 22%; height: 80%"></img></span>
 						 </div>
 
 						 <div class="header-top-button col-5 text-right" id="btn-signup">
@@ -94,7 +94,7 @@
 					</div>
 
 					<div class="row">
-						<p class="header-title-3 col-12 text-center"><button onclick="window.location.href = '#party'">DISCOVER NOW</button></p>
+						<p class="header-title-3 col-12 text-center" ><button  onclick="window.location.href = '#party'">DISCOVER NOW</button></p>
 					</div>
 				</div>
 			</div>
@@ -113,13 +113,12 @@
 						</div>
 
 						<div class="main-about-title col-6 text-center">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<button>MORE INFO</button>
+							<p><i>"Before the age of 6, the brain was relatively well developed,
+								so if you miss this time, then your brain, personality and soul
+								forever have never been so good to build laying the foundations for
+								both physical and mental development "</i>- Gesell. <br>
+								We will provide you with useful lessons, familiar songs, fun songs.
+								<b style="font-size: 25px; color: deeppink;">Join us to create a fun learning space</b>  </p>
 						</div>
 					</div>
 				</div>
@@ -160,13 +159,9 @@
 						</div>
 
 						<div class="main-team-title col-6 text-center">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<button>CONTACT US</button>
+							<p>If you have problems with our website. Please contact us.
+								We appreciate your feedback to help your website grow and improve.</p>
+							<button onclick="window.location.href = 'contact' ">CONTACT US</button>
 						</div>
 					</div>
 				</div>
@@ -217,7 +212,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4">
-							<p>LOGO</p>
+							<p><img src="/resources/template/img/logo.png" style = "width: 95px; height: 38px"></p>
 							<span>
 								<a href="https://www.facebook.com/profile.php?id=100005186686344&ref=bookmarks" target="_blank" class="fs-18 p-r-20 fab fa-facebook-f"></a>
 								<a href="https://www.skype.com/en/" target="_blank" class="fs-18 p-r-20 fab fa-skype"></a>
@@ -258,6 +253,6 @@
 		</footer>
 	</div>
 </body>
-<script src="/resources/script/CheckSession.js"></script>
 <script src="/resources/script/login.js"></script>
+<script src="/resources/script/CheckSession.js"></script>
 </html>

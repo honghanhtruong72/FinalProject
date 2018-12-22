@@ -102,8 +102,23 @@ public class LearningController {
                 return "example_animal";
             case TopicConst.TOPIC_COLOR:
                 return "example_color";
+            case TopicConst.TOPIC_NUMBER:
+                return "example_number";
+            case TopicConst.TOPIC_FAMILY:
+                return "example_family";
+            case TopicConst.TOPIC_BODY:
+                return "example_body";
+            case TopicConst.TOPIC_FURNITURE:
+                return "furniture";
             case TopicConst.FURNITURE_LIVING:
                 return "example_living";
+            case TopicConst.FURNITURE_BATHROOM:
+                return "example_bathroom";
+            case TopicConst.FURNITURE_KITCHEN:
+                return "example_kitchen";
+            case TopicConst.FURNITURE_BEDROOM:
+                return "example_bedroom";
+
             default:
                 return "404";
         }
